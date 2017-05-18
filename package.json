@@ -6,7 +6,8 @@
     "mapbox-gl": "^0.37.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-mapbox-gl": "^1.11.0"
+    "react-mapbox-gl": "^1.11.0",
+    "react-youtube": "^7.4.0"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
