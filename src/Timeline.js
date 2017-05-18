@@ -3,13 +3,13 @@ import Moment from './Moment'
 
 class Timeline extends Component {
   render() {
-    const videos = this.props.videos
+    const moments = this.props.videos
     return (
       <div>
         {
-          videos.sort((a, b) => { return new Date(a.date) - new Date(b.date)}).map((video, index) => {
+          moments.sort((a, b) => { return new Date(a.date) - new Date(b.date)}).map((moment, index) => {
             return (
-              <Moment key={index} video={video}></Moment>
+              <Moment key={index} moment={moment} handleClick={this.props.handleMomentClick}></Moment>
             )
           })
         }
