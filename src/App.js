@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import videos from './videos.json';
 
 class App extends Component {
   render() {
@@ -13,6 +14,15 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <ul>
+        {
+          videos.map((video, index) => {
+            return (
+              <li key={index}>{new Date(video.date).getUTCFullYear()}</li>
+            )
+          })
+        }
+        </ul>
       </div>
     );
   }
