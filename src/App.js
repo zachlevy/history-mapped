@@ -10,7 +10,8 @@ class App extends Component {
     super(props)
     this.state = {
       center: [12.5359979, 41.9100711],
-      zoom: [3]
+      zoom: [3],
+      momentIndex: 1
     }
   }
   onMapLoad(map, event) {
@@ -24,7 +25,8 @@ class App extends Component {
         moment.location.lng,
         moment.location.lat
       ],
-      zoom: [12]
+      zoom: [12],
+      momentIndex: moments.findIndex((m) => {return m.youtubeId == moment.youtubeId})
     })
   }
   handleMapMarkerClick(moment, event) {
@@ -34,15 +36,18 @@ class App extends Component {
         moment.location.lng,
         moment.location.lat
       ],
-      zoom: [12]
+      zoom: [12],
+      momentIndex: moments.findIndex((m) => {return m.youtubeId == moment.youtubeId})
     })
   }
   render() {
+    const selectedMoments = moments.slice(Math.max(this.state.momentIndex - 1, 0), this.state.momentIndex + 2)
     return (
       <div className="App">
         <div className="container-fluid">
           <div className="row">
             <div className="col-12 col-sm-6">
+              {this.state.momentIndex}
               <ReactMapboxGl
                 style="mapbox://styles/mapbox/streets-v8"
                 accessToken="pk.eyJ1IjoiemFjaGxldnkiLCJhIjoiY2lobWExbHJyMG8yNnQ0bHpmYW1zZXV2YyJ9.5RDwdgrQtOdHCOapEwe6eA"
@@ -64,7 +69,7 @@ class App extends Component {
               </ReactMapboxGl>
             </div>
             <div className="col-12 col-sm-6">
-              <Timeline handleMomentClick={this.handleTimelineMomentClick.bind(this)} moments={moments} />
+              <Timeline handleMomentClick={this.handleTimelineMomentClick.bind(this)} moments={selectedMoments} />
             </div>
           </div>
         </div>

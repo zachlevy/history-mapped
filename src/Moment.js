@@ -12,11 +12,7 @@ class Moment extends Component {
     }
     return (
       <div>
-        <YouTube
-          videoId={moment.youtubeId}
-          opts={playerOptions}
-          onReady={this._onReady}
-        />
+        {this.props.timelineIndex == 1 ? <YouTube videoId={moment.youtubeId} opts={playerOptions} onReady={this._onReady} /> : null }
         <h4>{moment.title}</h4>
         <p>{moment.youtubeId}</p>
         <p>{new Date(moment.date).getUTCFullYear()}</p>
