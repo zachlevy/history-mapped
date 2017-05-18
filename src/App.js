@@ -16,7 +16,8 @@ class App extends Component {
                 style="mapbox://styles/mapbox/streets-v8"
                 accessToken="pk.eyJ1IjoiemFjaGxldnkiLCJhIjoiY2lobWExbHJyMG8yNnQ0bHpmYW1zZXV2YyJ9.5RDwdgrQtOdHCOapEwe6eA"
                 containerStyle={{height: "100vh", width: "100%"}}
-                >
+                center={[12.5359979, 41.9100711]}
+                zoom={[3]}>
                 <Layer
                   type="symbol"
                   id="marker"
