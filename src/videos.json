@@ -40,36 +40,6 @@
       "lng": 9.2832725
     }
   },{
-    "date": "-000063-01-01T00:00:00.000Z",
-    "youtubeId": "MkZx0q_3rYI",
-    "title": "His Year - Cicero (63 B.C.E.)",
-    "author": "Historia Civilis",
-    "wikipedia": "",
-    "location": {
-      "lat": null,
-      "lng": null
-    }
-  },{
-    "date": "-000062-01-01T00:00:00.000Z",
-    "youtubeId": "kOiyt63_1_U",
-    "title": "His Year - Cato (62 B.C.E.)",
-    "author": "Historia Civilis",
-    "wikipedia": "",
-    "location": {
-      "lat": null,
-      "lng": null
-    }
-  },{
-    "date": "-000059-01-01T00:00:00.000Z",
-    "youtubeId": "gsK4nX0tCGQ",
-    "title": "His Year - Julius Caesar (59 B.C.E.)",
-    "author": "Historia Civilis",
-    "wikipedia": "",
-    "location": {
-      "lat": null,
-      "lng": null
-    }
-  },{
     "date": "-000058-01-01T00:00:00.000Z",
     "youtubeId": "ou5ecpHdWYI",
     "title": "Caesar vs Ariovistus (58 B.C.E.)",
@@ -88,16 +58,6 @@
     "location": {
       "lat": 46.666667,
       "lng": 4.7
-    }
-  },{
-    "date": "-000058-01-01T00:00:00.000Z",
-    "youtubeId": "KD_qyclkwYE",
-    "title": "His Year - Clodius (58 B.C.E.)",
-    "author": "Historia Civilis",
-    "wikipedia": "",
-    "location": {
-      "lat": null,
-      "lng": null
     }
   },{
     "date": "-000057-01-01T00:00:00.000Z",
@@ -120,54 +80,34 @@
       "lng": 3.5
     }
   },{
-    "date": "-000057-01-01T00:00:00.000Z",
-    "youtubeId": "wA1jtqYJRis",
-    "title": "Nobody's Year - CHAOS (57 B.C.E.)",
-    "author": "Historia Civilis",
-    "wikipedia": "",
-    "location": {
-      "lat": null,
-      "lng": null
-    }
-  },{
-    "date": "-000056-01-01T00:00:00.000Z",
-    "youtubeId": "cLK4vt1j_hk&t=913s",
-    "title": "His Year(s) - Pompey (56 to 52 B.C.E.)",
-    "author": "Historia Civilis",
-    "wikipedia": "",
-    "location": {
-      "lat": null,
-      "lng": null
-    }
-  },{
     "date": "-000056-01-01T00:00:00.000Z",
     "youtubeId": "MPsugO6txb4",
     "title": "Caesar in Gaul - Makin' Waves (56 B.C.E.)",
     "author": "Historia Civilis",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Gallic_Wars",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 47.5154704,
+      "lng": -3.1309856
     }
   },{
     "date": "-000055-01-01T00:00:00.000Z",
     "youtubeId": "LOCBWh5Iwm4",
     "title": "Caesar in Britain (55 B.C.E.)",
     "author": "Historia Civilis",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Caesar%27s_invasions_of_Britain",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 51.210527,
+      "lng": 1.404779
     }
   },{
     "date": "-000054-01-01T00:00:00.000Z",
     "youtubeId": "GrW6epBAz9Q&t=3s",
     "title": "Caesar in Britain II - There and Back Again (54 B.C.E.)",
     "author": "Historia Civilis",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Caesar%27s_invasions_of_Britain",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 51.1295,
+      "lng": 1.3089
     }
   },{
     "date": "-000053-05-06T00:00:00.000Z",
@@ -204,10 +144,10 @@
     "youtubeId": "npwM2touF08",
     "title": "Boudicca (60/61 C.E.)",
     "author": "Historia Civilis",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Watling_Street",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 52.65625,
+      "lng": -1.927139
     }
   },{
     "date": "1099-06-07T00:00:00.000Z",
