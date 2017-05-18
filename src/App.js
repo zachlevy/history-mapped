@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
-import videos from './videos.json'
+import moments from './moments.json'
 import Timeline from './Timeline'
 import 'mapbox-gl'
 import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl'
@@ -27,9 +27,17 @@ class App extends Component {
       zoom: [12]
     })
   }
+  handleMapMarkerClick(moment, event) {
+    console.log("handleMapMarkerClick")
+    this.setState({
+      center: [
+        moment.location.lng,
+        moment.location.lat
+      ],
+      zoom: [12]
+    })
+  }
   render() {
-    const center = this.center
-    console.log(center)
     return (
       <div className="App">
         <div className="container-fluid">
@@ -48,15 +56,15 @@ class App extends Component {
                   id="marker"
                   layout={{ "icon-image": "marker-15" }}>
                   {
-                    videos.map((video, index) => {
-                      return <Feature key={index} coordinates={[video.location.lng, video.location.lat]}/>
+                    moments.map((moment, index) => {
+                      return <Feature key={index} coordinates={[moment.location.lng, moment.location.lat]} onClick={this.handleMapMarkerClick.bind(this, moment)}/>
                     })
                   }
                 </Layer>
               </ReactMapboxGl>
             </div>
             <div className="col-12 col-sm-6">
-              <Timeline handleMomentClick={this.handleTimelineMomentClick.bind(this)} videos={videos} />
+              <Timeline handleMomentClick={this.handleTimelineMomentClick.bind(this)} moments={moments} />
             </div>
           </div>
         </div>

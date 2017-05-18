@@ -3,7 +3,7 @@ import Moment from './Moment'
 
 class Timeline extends Component {
   render() {
-    const moments = this.props.videos
+    const moments = this.props.moments
     return (
       <div>
         {
