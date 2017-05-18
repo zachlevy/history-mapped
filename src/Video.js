@@ -17,6 +17,12 @@ class Video extends Component {
         <td>
           {video.author}
         </td>
+        <td>
+          {video.location.lat}
+        </td>
+        <td>
+          {video.location.lng}
+        </td>
       </tr>
     );
   }

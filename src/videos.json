@@ -104,20 +104,20 @@
     "youtubeId": "wlrNX3zxAk0",
     "title": "The Battle of the Sabis (57 B.C.E.)",
     "author": "Historia Civilis",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_the_Sabis",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 50.2414,
+      "lng": 3.4447
     }
   },{
     "date": "-000057-01-01T00:00:00.000Z",
     "youtubeId": "xi6xEAAdcbY",
     "title": "The Battle of the Axona (57 B.C.E.)",
     "author": "Historia Civilis",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_the_Axona",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 49.5,
+      "lng": 3.5
     }
   },{
     "date": "-000057-01-01T00:00:00.000Z",
@@ -170,34 +170,34 @@
       "lng": null
     }
   },{
-    "date": "-000053-01-01T00:00:00.000Z",
+    "date": "-000053-05-06T00:00:00.000Z",
     "youtubeId": "bR7VDPUj5AE",
     "title": "The Battle of Carrhae (53 B.C.E.)",
     "author": "Historia Civilis",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Carrhae",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 36.8775,
+      "lng": 39.033889
     }
   },{
-    "date": "-000048-01-01T00:00:00.000Z",
+    "date": "-000048-08-09T00:00:00.000Z",
     "youtubeId": "QfLOaunQqxA",
     "title": "The Battle of Pharsalus (48 B.C.E.)",
     "author": "Historia Civilis",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Pharsalus",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 39.3,
+      "lng": 22.383333
     }
   },{
-    "date": "0009-01-01T00:00:00.000Z",
+    "date": "0009-09-09T00:00:00.000Z",
     "youtubeId": "kmF3VBA_RcM&t=8s",
     "title": "The Battle of the Teutoburg Forest (9 C.E.)",
     "author": "Historia Civilis",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_the_Teutoburg_Forest",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 52.283333,
+      "lng": 8.05
     }
   },{
     "date": "0060-01-01T00:00:00.000Z",
@@ -210,194 +210,194 @@
       "lng": null
     }
   },{
-    "date": "1099-01-01T00:00:00.000Z",
+    "date": "1099-06-07T00:00:00.000Z",
     "youtubeId": "heVeJmTOsmQ",
     "title": "The Siege of Jerusalem (1099)",
     "author": "Historia Civilis",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(1099)",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 31.783333,
+      "lng": 35.216667
     }
   },{
-    "date": "1415-01-01T00:00:00.000Z",
+    "date": "1415-10-25T00:00:00.000Z",
     "youtubeId": "VDnKciXrmnc",
     "title": "The Battle of Agincourt (1415)",
     "author": "Historia Civilis",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Agincourt",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 50.463611,
+      "lng": 2.141667
     }
   },{
     "date": "-000358-01-01T00:00:00.000Z",
     "youtubeId": "97O9jg6_MqE",
     "title": "The Battle of Erigon Valley 358 BC",
     "author": "BazBattles",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Erigon_Valley",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 41.0258625,
+      "lng": 21.2935659
     }
   },{
-    "date": "-000338-01-01T00:00:00.000Z",
+    "date": "-000338-08-02T00:00:00.000Z",
     "youtubeId": "-0YsoaN__8U",
     "title": "The Battle of Chaeronea 338 BC",
     "author": "BazBattles",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Chaeronea_(338_BC)",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 38.516667,
+      "lng": 22.85
     }
   },{
-    "date": "-000334-01-01T00:00:00.000Z",
+    "date": "-000334-05-01T00:00:00.000Z",
     "youtubeId": "92_6IJ4I9p0",
     "title": "The Battle of Granicus 334 BC",
     "author": "BazBattles",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_the_Granicus",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 40.3309019,
+      "lng": 27.206307
     }
   },{
-    "date": "-000333-01-01T00:00:00.000Z",
+    "date": "-000333-11-05T00:00:00.000Z",
     "youtubeId": "5W6Zs2IOu70",
     "title": "The Battle of Issus 333 BC",
     "author": "BazBattles",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Issus",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 36.853611,
+      "lng": 36.156944
     }
   },{
     "date": "-000332-01-01T00:00:00.000Z",
     "youtubeId": "-WkWy47ighY",
     "title": "The Siege of Tyre 332 BC",
     "author": "BazBattles",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Siege_of_Tyre_(332_BC)",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 33.270833,
+      "lng": 35.196111
     }
   },{
-    "date": "-000331-01-01T00:00:00.000Z",
+    "date": "-000331-10-01T00:00:00.000Z",
     "youtubeId": "vY3z3yh7a24",
     "title": "Alexander the Great: Battle of Gaugamela 331 BC",
     "author": "BazBattles",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Gaugamela",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 36.1974139,
+      "lng": 43.9386151
     }
   },{
-    "date": "-000330-01-01T00:00:00.000Z",
+    "date": "-000330-01-20T00:00:00.000Z",
     "youtubeId": "QS-4TsurrFY",
     "title": "Alexander the Great: Battle of the Persian Gate 330 BC",
     "author": "BazBattles",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_the_Persian_Gate",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 30.708333,
+      "lng": 51.598611
     }
   },{
     "date": "0009-01-01T00:00:00.000Z",
     "youtubeId": "A3jSjknuUG0",
     "title": "The Battle of Teutoburg Forest 9 AD",
     "author": "BazBattles",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_the_Teutoburg_Forest",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 52.283333,
+      "lng": 8.05
     }
   },{
     "date": "0711-01-01T00:00:00.000Z",
     "youtubeId": "D8LgN6z62NM",
     "title": "The Battle of Guadalete 711 AD",
     "author": "BazBattles",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Guadalete",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 36.825188,
+      "lng": -5.663489
     }
   },{
-    "date": "1014-01-01T00:00:00.000Z",
+    "date": "1014-04-23T00:00:00.000Z",
     "youtubeId": "NNe-lVcI-R0",
     "title": "Brian Boru and The Battle of Clontarf 1014 AD",
     "author": "BazBattles",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Clontarf",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 53.365,
+      "lng": -6.21
     }
   },{
-    "date": "1066-01-01T00:00:00.000Z",
+    "date": "1066-09-20T00:00:00.000Z",
     "youtubeId": "ynlyiBfllwg",
     "title": "The Battle of Fulford 1066 AD",
     "author": "BazBattles",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Fulford",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 53.931,
+      "lng": -1.07
     }
   },{
-    "date": "1066-01-01T00:00:00.000Z",
+    "date": "1066-09-25T00:00:00.000Z",
     "youtubeId": "ByN8nqEpGu0",
     "title": "The Battle of Stamford Bridge 1066 AD",
     "author": "BazBattles",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Stamford_Bridge",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 53.989,
+      "lng": -0.912544
     }
   },{
-    "date": "1066-01-01T00:00:00.000Z",
+    "date": "1066-10-14T00:00:00.000Z",
     "youtubeId": "FW4RKp23Z4M",
     "title": "The Battle of Hastings 1066 AD",
     "author": "BazBattles",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Hastings",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 50.92,
+      "lng": 0.48
     }
   },{
-    "date": "1302-01-01T00:00:00.000Z",
+    "date": "1302-07-11T00:00:00.000Z",
     "youtubeId": "P5ksuFG8YaY",
     "title": "The Battle of the Golden Spurs 1302 AD",
     "author": "BazBattles",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_the_Golden_Spurs",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 50.829,
+      "lng": 3.276
     }
   },{
-    "date": "1315-01-01T00:00:00.000Z",
+    "date": "1315-11-15T00:00:00.000Z",
     "youtubeId": "kGZ7Wh3CbTU",
     "title": "The Battle of Morgarten 1315 AD",
     "author": "BazBattles",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Morgarten",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 47.098680,
+      "lng": 8.636056
     }
   },{
-    "date": "1361-01-01T00:00:00.000Z",
+    "date": "1361-07-22T00:00:00.000Z",
     "youtubeId": "MoP9N5d4TiM",
     "title": "The Battle of Visby 1361 AD",
     "author": "BazBattles",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Visby",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 57.633333,
+      "lng": 18.283333
     }
   },{
-    "date": "1513-01-01T00:00:00.000Z",
+    "date": "1513-09-09T00:00:00.000Z",
     "youtubeId": "9aQFjhp2j8w",
     "title": "The Battle of Flodden 1513 AD",
     "author": "BazBattles",
-    "wikipedia": "",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Flodden",
     "location": {
-      "lat": null,
-      "lng": null
+      "lat": 55.6309,
+      "lng": -2.1683
     }
   }
 ]
