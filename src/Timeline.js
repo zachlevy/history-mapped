@@ -5,8 +5,7 @@ class Timeline extends Component {
   render() {
     const videos = this.props.videos
     return (
-      <table>
-        <tbody>
+      <div>
         {
           videos.sort((a, b) => { return new Date(a.date) - new Date(b.date)}).map((video, index) => {
             return (
@@ -14,8 +13,7 @@ class Timeline extends Component {
             )
           })
         }
-        </tbody>
-      </table>
+      </div>
     )
   }
 }
