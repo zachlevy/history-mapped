@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-class Video extends Component {
+class Moment extends Component {
   render() {
     const video = this.props.video
     return (
@@ -24,8 +24,8 @@ class Video extends Component {
           {video.location.lng}
         </td>
       </tr>
-    );
+    )
   }
 }
 
-export default Video;
+export default Moment

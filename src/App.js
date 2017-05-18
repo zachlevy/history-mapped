@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import './App.css';
-import videos from './videos.json';
-import Video from './Video'
+import React, { Component } from 'react'
+import './App.css'
+import videos from './videos.json'
+import Timeline from './Timeline'
 import 'mapbox-gl'
 import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl'
 
@@ -30,23 +30,13 @@ class App extends Component {
               </ReactMapboxGl>
             </div>
             <div className="col-12 col-sm-6">
-              <table>
-                <tbody>
-                {
-                  videos.sort((a, b) => { return new Date(a.date) - new Date(b.date)}).map((video, index) => {
-                    return (
-                      <Video key={index} video={video}></Video>
-                    )
-                  })
-                }
-                </tbody>
-              </table>
+              <Timeline videos={videos} />
             </div>
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
