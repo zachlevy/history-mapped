@@ -8,7 +8,6 @@ import Footer from './Footer'
 
 class App extends Component {
   constructor(props) {
-    const momentsLength = moments.length
     super(props)
     this.state = {
       center: [12.5359979, 41.9100711],
@@ -23,6 +22,10 @@ class App extends Component {
   onMapLoad(map, event) {
     console.log("onMapLoad")
     this.map = map
+    map.loadImage('/icons/shield_icon_black_red_x256.png', (error, image) => {
+      if (error) throw error
+      map.addImage('battle-icon', image)
+    })
   }
   handleTimelineMomentClick(moment, event) {
     console.log("handleTimelineMomentClick")
@@ -73,7 +76,7 @@ class App extends Component {
                 <Layer
                   type="symbol"
                   id="marker"
-                  layout={{ "icon-image": "marker-15" }}>
+                  layout={{ "icon-image": "battle-icon", "icon-size": 0.12, "icon-allow-overlap": true }}>
                   {
                     moments.map((moment, index) => {
                       return <Feature key={index} coordinates={[moment.location.lng, moment.location.lat]} onClick={this.handleMapMarkerClick.bind(this, moment)}/>
