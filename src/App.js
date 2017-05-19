@@ -4,6 +4,7 @@ import moments from './moments.json'
 import Timeline from './Timeline'
 import 'mapbox-gl'
 import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl'
+import Footer from './Footer'
 
 class App extends Component {
   constructor(props) {
@@ -84,6 +85,7 @@ class App extends Component {
               <Timeline handleMomentClick={this.handleTimelineMomentClick.bind(this)} moments={selectedMoments} mapMoving={this.state.mapMoving} />
             </div>
           </div>
+          <Footer />
         </div>
       </div>
     )

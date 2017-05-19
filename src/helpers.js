@@ -9,3 +9,9 @@ export function dateToCommonEra(date) {
   year = Math.abs(year)
   return year + era
 }
+
+export const currentYear = new Date().getFullYear()
+
+export function timestampToDateString(unixTimestamp) {
+  return new Date(unixTimestamp * 1000).toISOString().slice(0,10)
+}
