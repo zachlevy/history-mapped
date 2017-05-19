@@ -15,6 +15,9 @@ class App extends Component {
       mapMoving: false
     }
   }
+  componentWillMount() {
+
+  }
   onMapLoad(map, event) {
     console.log("onMapLoad")
     this.map = map
@@ -27,7 +30,7 @@ class App extends Component {
         moment.location.lat
       ],
       zoom: [12],
-      momentIndex: moments.findIndex((m) => {return m.youtubeId == moment.youtubeId}),
+      momentIndex: moments.findIndex((m) => {return m.youtubeId === moment.youtubeId}),
       mapMoving: true
     })
   }
@@ -39,7 +42,7 @@ class App extends Component {
         moment.location.lat
       ],
       zoom: [12],
-      momentIndex: moments.findIndex((m) => {return m.youtubeId == moment.youtubeId}),
+      momentIndex: moments.findIndex((m) => {return m.youtubeId === moment.youtubeId}),
       mapMoving: true
     })
   }
@@ -48,12 +51,15 @@ class App extends Component {
     this.setState({mapMoving: false})
   }
   render() {
-    const selectedMoments = moments.slice(Math.max(this.state.momentIndex - 1, 0), this.state.momentIndex + 2)
+    const selectedMoments = moments.sort((a, b) => { return new Date(a.date) - new Date(b.date)}).slice(Math.max(this.state.momentIndex - 1, 0), this.state.momentIndex + 2)
+    console.log(Math.max(this.state.momentIndex - 1, 0), this.state.momentIndex + 2)
+    console.log(selectedMoments)
     return (
       <div className="App">
         <div className="container-fluid">
           <div className="row">
             <div className="col-12 col-sm-6">
+              {this.state.momentIndex}
               <ReactMapboxGl
                 style="mapbox://styles/mapbox/streets-v8"
                 accessToken="pk.eyJ1IjoiemFjaGxldnkiLCJhIjoiY2lobWExbHJyMG8yNnQ0bHpmYW1zZXV2YyJ9.5RDwdgrQtOdHCOapEwe6eA"

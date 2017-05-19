@@ -1,18 +1,28 @@
 import React, { Component } from 'react'
 import Moment from './Moment'
+import SelectedMoment from './SelectedMoment'
 
 class Timeline extends Component {
   render() {
     const moments = this.props.moments
+    const momentsLength = moments.length
     return (
       <div>
-        {
-          moments.sort((a, b) => { return new Date(a.date) - new Date(b.date)}).map((moment, index) => {
-            return (
-              <Moment key={index} timelineIndex={index} moment={moment} mapMoving={this.props.mapMoving} handleClick={this.props.handleMomentClick}></Moment>
-            )
-          })
-        }
+        <div className="row">
+          <div className="col-12">
+            <SelectedMoment moment={moments[momentsLength - 2]} mapMoving={this.props.mapMoving} />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-sm-6">
+            <h4>Previous Battle</h4>
+            <Moment moment={moments[momentsLength - 3]} handleClick={this.props.handleMomentClick} />
+          </div>
+          <div className="col-12 col-sm-6">
+            <h4>Next Battle</h4>
+            <Moment moment={moments[momentsLength - 1]} handleClick={this.props.handleMomentClick} />
+          </div>
+        </div>
       </div>
     )
   }
