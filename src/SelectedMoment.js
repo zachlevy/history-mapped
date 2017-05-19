@@ -12,12 +12,16 @@ class SelectedMoment extends Component {
       width: '100%'
     }
     return (
-      <div>
+      <div className="selected-moment">
         <div className="row">
-          <div className="col-12">
-            <h4>{moment.title}</h4>
-            <p>{moment.author}</p>
-            <p>{dateToCommonEra(new Date(moment.date))}</p>
+          <div className="col-12 col-sm-8">
+            <h3 className="title">{moment.title}</h3>
+            <p>by <em>{moment.author}</em></p>
+          </div>
+          <div className="col-12 col-sm-4">
+            <div className="selected-date">
+              <h2>{dateToCommonEra(new Date(moment.date))}</h2>
+            </div>
           </div>
         </div>
         <div className="row">
@@ -25,7 +29,6 @@ class SelectedMoment extends Component {
             {!this.props.mapMoving ? <YouTube videoId={moment.youtubeId} opts={playerOptions} onReady={this._onReady} /> : null }
           </div>
         </div>
-        <hr />
       </div>
     )
   }

@@ -9,18 +9,17 @@ class Moment extends Component {
       return <div></div>
     }
     return (
-      <div>
+      <div className="moment">
         <div className="row">
-          <div className="col-12">
+          <div className="col-12 col-sm-8">
             <label>{moment.title}</label>
+          </div>
+          <div className="col-12 col-sm-4">
+            <p>{dateToCommonEra(new Date(moment.date))}</p>
           </div>
         </div>
         <div className="row">
-          <div className="col-12 col-sm-6">
-            <p>{moment.author}</p>
-            <p>{dateToCommonEra(new Date(moment.date))}</p>
-          </div>
-          <div className="col-12 col-sm-6">
+          <div className="col-12">
             <button className="btn btn-primary" onClick={this.props.handleClick.bind(null, moment)}>Watch Battle</button>
           </div>
         </div>

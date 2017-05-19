@@ -1,0 +1,32 @@
+.selected-date {
+  background: red;
+  padding: 0.5em;
+  text-align: center;
+  margin: 0.5em;
+}
+.selected-date h2 {
+  color: #ffffff;
+  margin: 0;
+}
+.moment {
+
+}
+.selected-moment {
+}
+.selected-moment .title {
+  margin-top: 0.5em;
+}
+.timeline-previous-icon,
+.timeline-next-icon {
+  margin: 0 auto;
+  width: 1em;
+  margin-top: -1em;
+}
+.timeline-line {
+  margin: 0.25em 0;
+}
+.timeline-selected-icon {
+  margin: 0 auto;
+  width: 1em;
+  margin-bottom: -1em;
+}

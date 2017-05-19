@@ -29,19 +29,33 @@ class Timeline extends Component {
       nextMoment = moments[2]
     }
     return (
-      <div>
+      <div className="timeline">
         <div className="row">
           <div className="col-12">
             <SelectedMoment moment={selectedMoment} mapMoving={this.props.mapMoving} />
           </div>
         </div>
         <div className="row">
+          <div className="col-12">
+            <div className="timeline-selected-icon">
+              <i className="fa fa-circle"></i>
+            </div>
+            <hr className="timeline-line" />
+          </div>
+        </div>
+        <div className="row">
           <div className="col-12 col-sm-6">
-            <h4>Previous Battle</h4>
+            <div className="timeline-previous-icon">
+              <i className="fa fa-circle-thin"></i>
+            </div>
+            <label>Previous</label>
             <Moment moment={previousMoment} handleClick={this.props.handleMomentClick} />
           </div>
           <div className="col-12 col-sm-6">
-            <h4>Next Battle</h4>
+            <div className="timeline-next-icon">
+              <i className="fa fa-circle-thin"></i>
+            </div>
+            <label>Next</label>
             <Moment moment={nextMoment} handleClick={this.props.handleMomentClick} />
           </div>
         </div>
