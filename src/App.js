@@ -59,7 +59,6 @@ class App extends Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col-12 col-sm-6">
-              {this.state.momentIndex}
               <ReactMapboxGl
                 style="mapbox://styles/mapbox/streets-v8"
                 accessToken="pk.eyJ1IjoiemFjaGxldnkiLCJhIjoiY2lobWExbHJyMG8yNnQ0bHpmYW1zZXV2YyJ9.5RDwdgrQtOdHCOapEwe6eA"
