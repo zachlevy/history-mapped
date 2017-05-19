@@ -9,7 +9,7 @@ class Timeline extends Component {
         {
           moments.sort((a, b) => { return new Date(a.date) - new Date(b.date)}).map((moment, index) => {
             return (
-              <Moment key={index} timelineIndex={index} moment={moment} handleClick={this.props.handleMomentClick}></Moment>
+              <Moment key={index} timelineIndex={index} moment={moment} mapMoving={this.props.mapMoving} handleClick={this.props.handleMomentClick}></Moment>
             )
           })
         }
