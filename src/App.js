@@ -22,7 +22,7 @@ class App extends Component {
   onMapLoad(map, event) {
     console.log("onMapLoad")
     this.map = map
-    map.loadImage('/icons/spear_icon_back_red_x256.png', (error, image) => {
+    map.loadImage('/icons/spear_icon_back_red_white_x256.png', (error, image) => {
       if (error) throw error
       map.addImage('battle-icon', image)
     })
