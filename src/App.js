@@ -26,6 +26,11 @@ class App extends Component {
       if (error) throw error
       map.addImage('battle-icon', image)
     })
+    // initial map move
+    setTimeout(() => {
+      this.handleMapMarkerClick(moments[this.state.momentIndex])
+    }, 2000)
+
   }
   handleTimelineMomentClick(moment, event) {
     console.log("handleTimelineMomentClick")
