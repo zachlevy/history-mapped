@@ -8,11 +8,12 @@ import Footer from './Footer'
 
 class App extends Component {
   constructor(props) {
+    const momentsLength = moments.length
     super(props)
     this.state = {
       center: [12.5359979, 41.9100711],
       zoom: [3],
-      momentIndex: 1,
+      momentIndex: Math.floor(Math.random() * moments.length - 1) + 1,
       mapMoving: false
     }
   }
