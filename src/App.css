@@ -1,16 +1,3 @@
-.selected-date {
-  background: red;
-  padding: 0.5em;
-  text-align: center;
-  margin: 0.5em;
-}
-.selected-date h2 {
-  color: #ffffff;
-  margin: 0;
-}
-.moment {
-
-}
 .selected-moment {
 }
 .selected-moment .title {
@@ -28,5 +15,6 @@
 .timeline-selected-icon {
   margin: 0 auto;
   width: 1em;
-  margin-bottom: -1em;
+  margin-bottom: -0.9em;
+  font-size: 2em;
 }

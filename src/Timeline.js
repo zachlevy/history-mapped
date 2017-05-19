@@ -48,14 +48,12 @@ class Timeline extends Component {
             <div className="timeline-previous-icon">
               <i className="fa fa-circle-thin"></i>
             </div>
-            <label>Previous</label>
             <Moment moment={previousMoment} handleClick={this.props.handleMomentClick} />
           </div>
           <div className="col-12 col-sm-6">
             <div className="timeline-next-icon">
               <i className="fa fa-circle-thin"></i>
             </div>
-            <label>Next</label>
             <Moment moment={nextMoment} handleClick={this.props.handleMomentClick} />
           </div>
         </div>

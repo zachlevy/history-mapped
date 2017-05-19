@@ -11,16 +11,16 @@ class Moment extends Component {
     return (
       <div className="moment">
         <div className="row">
-          <div className="col-12 col-sm-8">
-            <label>{moment.title}</label>
-          </div>
-          <div className="col-12 col-sm-4">
-            <p>{dateToCommonEra(new Date(moment.date))}</p>
+          <div className="col-12">
+            <p className="text-center">{dateToCommonEra(new Date(moment.date))}</p>
+            <h4 className="text-center">{moment.title}</h4>
           </div>
         </div>
         <div className="row">
-          <div className="col-12">
-            <button className="btn btn-primary" onClick={this.props.handleClick.bind(null, moment)}>Watch Battle</button>
+          <div className="col-12 text-center">
+            <button className="btn btn-primary" onClick={this.props.handleClick.bind(null, moment)}>
+              <i className="fa fa-eye"></i> Watch Battle
+            </button>
           </div>
         </div>
         <hr />
