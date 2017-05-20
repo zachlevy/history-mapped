@@ -23,7 +23,6 @@ class Moment extends Component {
             </button>
           </div>
         </div>
-        <hr />
       </div>
     )
   }

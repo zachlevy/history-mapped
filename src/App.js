@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import moments from './moments.json'
 import Timeline from './Timeline'
+import Panel from './Panel'
 import 'mapbox-gl'
 import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl'
 import Footer from './Footer'
@@ -91,10 +92,10 @@ class App extends Component {
               </ReactMapboxGl>
             </div>
             <div className="col-12 col-sm-6">
-              <Timeline handleMomentClick={this.handleTimelineMomentClick.bind(this)} moments={selectedMoments} mapMoving={this.state.mapMoving} />
+              <Panel moments={selectedMoments} mapMoving={this.state.mapMoving} />
             </div>
           </div>
-          <Footer />
+          <Timeline handleMomentClick={this.handleTimelineMomentClick.bind(this)} moments={selectedMoments} mapMoving={this.state.mapMoving} />
         </div>
       </div>
     )

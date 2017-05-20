@@ -30,3 +30,9 @@ footer {
   background: -webkit-linear-gradient(to right, #670003, #870e14);
   background: linear-gradient(to right, #670003, #870e14);
 }
+.timeline {
+  position: fixed;
+  bottom: 0;
+  background: white;
+  width: 100%;
+}

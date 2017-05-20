@@ -14,15 +14,21 @@ class SelectedMoment extends Component {
     return (
       <div className="selected-moment">
         <div className="row">
-          <div className="col-12">
+          <div className="col-12 col-sm-8">
             <h3 className="title">{moment.title}</h3>
             <p>by <em>{moment.author}</em></p>
+          </div>
+          <div className="col-12 col-sm-4">
+            <h2>{dateToCommonEra(new Date(moment.date))}</h2>
           </div>
         </div>
         <div className="row">
           <div className="col-12">
-            {!this.props.mapMoving ? <YouTube videoId={moment.youtubeId} opts={playerOptions} onReady={this._onReady} /> : null }
-            <h2 className="text-center">{dateToCommonEra(new Date(moment.date))}</h2>
+            {!this.props.mapMoving ? (
+              <div className="embed-responsive embed-responsive-16by9">
+                <YouTube className="embed-responsive-item" videoId={moment.youtubeId} opts={playerOptions} onReady={this._onReady} />
+              </div>
+            ) : null }
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Moment from './Moment'
 import SelectedMoment from './SelectedMoment'
+import { dateToCommonEra } from './helpers'
 
 class Timeline extends Component {
   render() {
@@ -32,7 +33,7 @@ class Timeline extends Component {
       <div className="timeline">
         <div className="row">
           <div className="col-12">
-            <SelectedMoment moment={selectedMoment} mapMoving={this.props.mapMoving} />
+            <h2 className="text-center">{dateToCommonEra(new Date(selectedMoment.date))}</h2>
           </div>
         </div>
         <div className="row">
