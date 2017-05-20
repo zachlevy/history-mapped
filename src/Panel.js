@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import SelectedMoment from './SelectedMoment'
+import Scroll from './Scroll'
 
 class Panel extends Component {
   render() {
@@ -24,6 +25,7 @@ class Panel extends Component {
         <div className="row">
           <div className="col-12">
             <SelectedMoment moment={selectedMoment} mapMoving={this.props.mapMoving} />
+            <Scroll />
           </div>
         </div>
       </div>

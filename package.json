@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "iscroll": "^5.2.0",
     "mapbox-gl": "^0.37.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-iscroll": "^1.1.4",
     "react-mapbox-gl": "^1.11.0",
     "react-youtube": "^7.4.0"
   },
