@@ -25,3 +25,8 @@ footer {
   background-color: #f9f9f9;
   border-top: .05rem solid #e5e5e5;
 }
+.gradient-red {
+  background: #870e14;
+  background: -webkit-linear-gradient(to right, #670003, #870e14);
+  background: linear-gradient(to right, #670003, #870e14);
+}
