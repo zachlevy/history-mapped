@@ -47,15 +47,6 @@ class Scroll extends Component {
         </div>
       </ReactIScroll>
     )
-    // return (
-    //   <div className="basic-scroll-wrapper">
-    //     <div className="basic-scroll">
-    //       {
-    //         Array.apply(null, Array(50)).map(function (x, i) { return <span key={i} className="box">{i}</span> })
-    //       }
-    //     </div>
-    //   </div>
-    // )
   }
 }
 
