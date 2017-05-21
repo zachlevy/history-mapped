@@ -15,19 +15,23 @@ class Timeline extends Component {
   }
   // move the timeline when props change
   shouldComponentUpdate(nextProps) {
-    console.log("shouldComponentUpdate", this.props.selectedMomentIndex, nextProps.selectedMomentIndex)
+    // console.log("shouldComponentUpdate", this.props.selectedMomentIndex, nextProps.selectedMomentIndex)
     if (this.props.selectedMomentIndex != nextProps.selectedMomentIndex) {
       this.scrollToSelectedMoment(nextProps.selectedMomentIndex)
     }
     return true
   }
+  componentDidMount() {
+    // get the width of the timeline
+    // absolute position for iscroll doesn't let us to % width
+    this.timelineWidth = this.refs.timeline.offsetWidth
+  }
   render() {
+    const momentWidth = this.timelineWidth / 5
     const moments = this.props.moments
     const momentsLength = moments.length
     // dynamic overflow width based on number of moments in timeline
     const timelineWidth = Math.floor(momentsLength * 100 / 3) + "%"
-    console.log(timelineWidth)
-
     const selectedMomentHTML = (
       <div className="row">
         <div className="col-12">
@@ -40,7 +44,7 @@ class Timeline extends Component {
       </div>
     )
     return (
-      <div className="timeline">
+      <div className="timeline" ref="timeline">
         <ReactIScroll
           ref="iScroll"
           iScroll={iScroll}
@@ -55,7 +59,7 @@ class Timeline extends Component {
             <div className="row">
               {
                 moments.map((moment,index) => {
-                  return <Moment key={index} momentIndex={index} selectedMoment={index === this.props.selectedMomentIndex} moment={moment} handleClick={this.props.handleMomentClick} />
+                  return <Moment width={momentWidth} key={index} momentIndex={index} selectedMoment={index === this.props.selectedMomentIndex} moment={moment} handleClick={this.props.handleMomentClick} />
                 })
               }
             </div>

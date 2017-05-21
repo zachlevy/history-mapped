@@ -5,8 +5,10 @@ import { dateToCommonEra } from './helpers'
 class Moment extends Component {
   render() {
     const moment = this.props.moment
+    // put a default of 250px for moment with
+    const momentWidth = this.props.width || "250px"
     return (
-      <div className="moment">
+      <div className="moment" style={{width: momentWidth}}>
         <div className="timeline-previous-icon">
           <i className={"fa fa-circle" + (this.props.selectedMoment ? "" : "-thin")}></i>
         </div>
