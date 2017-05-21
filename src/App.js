@@ -14,7 +14,7 @@ class App extends Component {
       center: [12.5359979, 41.9100711],
       zoom: [3],
       momentIndex: Math.floor(Math.random() * moments.length - 1) + 1,
-      mapMoving: false
+      mapMoving: true
     }
   }
   componentWillMount() {
