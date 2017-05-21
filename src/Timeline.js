@@ -2,8 +2,20 @@ import React, { Component } from 'react'
 import Moment from './Moment'
 import SelectedMoment from './SelectedMoment'
 import { dateToCommonEra } from './helpers'
+import ReactIScroll from 'react-iscroll'
+import iScroll from 'iscroll'
 
 class Timeline extends Component {
+  componentDidMount() {
+
+  }
+  handleClick(event) {
+    event.preventDefault()
+    console.log("handleClick")
+    this.refs.iScroll.withIScroll(function(iScroll) {
+      iScroll.scrollToElement(document.querySelector("#selectedTimelineDate", null, true, null))
+    })
+  }
   render() {
     const moments = this.props.moments
     const momentsLength = moments.length
@@ -29,35 +41,49 @@ class Timeline extends Component {
       previousMoment = moments[0]
       nextMoment = moments[2]
     }
+    const timelineWidth = Math.floor(moments.length * 100) + "%"
+    console.log(timelineWidth)
     return (
       <div className="timeline">
-        <div className="row">
-          <div className="col-12">
-            <h2 className="text-center">{dateToCommonEra(new Date(selectedMoment.date))}</h2>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <div className="timeline-selected-icon">
-              <i className="fa fa-circle"></i>
+        <ReactIScroll
+          ref="iScroll"
+          iScroll={iScroll}
+          options={{mouseWheel: true, scrollbars: true, scrollX: true, scrollY: false}}
+        >
+          <div style={{width: timelineWidth}}>
+            <div className="row">
+              <div className="col-12">
+                <h2 className="text-center" onClick={this.handleClick.bind(this)}>
+                  <span id="selectedTimelineDate">
+                    {dateToCommonEra(new Date(selectedMoment.date))}
+                  </span>
+                </h2>
+              </div>
             </div>
-            <hr className="timeline-line" />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12 col-sm-6">
-            <div className="timeline-previous-icon">
-              <i className="fa fa-circle-thin"></i>
+            <div className="row">
+              <div className="col-12">
+                <div className="timeline-selected-icon">
+                  <i className="fa fa-circle"></i>
+                </div>
+                <hr className="timeline-line" />
+              </div>
             </div>
-            <Moment moment={previousMoment} handleClick={this.props.handleMomentClick} />
-          </div>
-          <div className="col-12 col-sm-6">
-            <div className="timeline-next-icon">
-              <i className="fa fa-circle-thin"></i>
+            <div className="row">
+              <div className="col-12 col-sm-6">
+                <div className="timeline-previous-icon">
+                  <i className="fa fa-circle-thin"></i>
+                </div>
+                <Moment moment={previousMoment} handleClick={this.props.handleMomentClick} />
+              </div>
+              <div className="col-12 col-sm-6">
+                <div className="timeline-next-icon">
+                  <i className="fa fa-circle-thin"></i>
+                </div>
+                <Moment moment={nextMoment} handleClick={this.props.handleMomentClick} />
+              </div>
             </div>
-            <Moment moment={nextMoment} handleClick={this.props.handleMomentClick} />
           </div>
-        </div>
+        </ReactIScroll>
       </div>
     )
   }
