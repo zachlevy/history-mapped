@@ -27,6 +27,10 @@ class App extends Component {
       if (error) throw error
       map.addImage('battle-icon', image)
     })
+    map.loadImage('./icons/spear_icon_back_red_squared_x462.png', (error, image) => {
+      if (error) throw error
+      map.addImage('battle-icon-selected', image)
+    })
     // initial map move
     setTimeout(() => {
       this.handleMapMarkerClick(moments[this.state.momentIndex])
@@ -90,6 +94,14 @@ class App extends Component {
                     })
                   }
                 </Layer>
+                <Layer
+                  type="symbol"
+                  id="selected-marker"
+                  layout={{ "icon-image": "battle-icon-selected", "icon-size": 0.12, "icon-allow-overlap": true }}>
+
+                  <Feature coordinates={[moments[this.state.momentIndex].location.lng, moments[this.state.momentIndex].location.lat]} />
+                </Layer>
+
               </ReactMapboxGl>
             </div>
             <div className="col-12 col-sm-6">
