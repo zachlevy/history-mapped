@@ -13,18 +13,17 @@ class Timeline extends Component {
       iScrollInstance.scrollToElement(document.querySelector("#timeline-moment-" + momentIndex, 1000, true, null, iScroll.utils.ease.elastic))
     })
   }
-  // move the timeline when props change
-  shouldComponentUpdate(nextProps) {
-    // console.log("shouldComponentUpdate", this.props.selectedMomentIndex, nextProps.selectedMomentIndex)
-    if (this.props.selectedMomentIndex != nextProps.selectedMomentIndex) {
-      this.scrollToSelectedMoment(nextProps.selectedMomentIndex)
-    }
-    return true
+  // move the timeline when timeline updates
+  componentDidUpdate() {
+    this.scrollToSelectedMoment(this.props.selectedMomentIndex)
+    // return true
   }
   componentDidMount() {
     // get the width of the timeline
     // absolute position for iscroll doesn't let us to % width
     this.timelineWidth = this.refs.timeline.offsetWidth
+    // initial timeline move
+    this.scrollToSelectedMoment(this.props.selectedMomentIndex)
   }
   render() {
     const momentWidth = this.timelineWidth / 5
