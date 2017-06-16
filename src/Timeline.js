@@ -10,7 +10,7 @@ class Timeline extends Component {
   scrollToSelectedMoment(momentIndex) {
     console.log("scrollToSelectedMoment")
     this.refs.iScroll.withIScroll((iScrollInstance) => {
-      iScrollInstance.scrollToElement(document.querySelector("#timeline-moment-" + momentIndex, 1000, true, null, iScroll.utils.ease.elastic))
+      iScrollInstance.scrollToElement(document.querySelector("#timeline-moment-" + momentIndex), 5000, true)
     })
   }
   // move the timeline when timeline updates
