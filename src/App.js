@@ -14,7 +14,7 @@ class App extends Component {
       center: [12.5359979, 41.9100711],
       zoom: [3],
       momentIndex: Math.floor(Math.random() * moments.length - 1) + 1,
-      mapMoving: false
+      mapMoving: true
     }
   }
   componentWillMount() {
@@ -35,6 +35,7 @@ class App extends Component {
   }
   handleTimelineMomentClick(moment, event) {
     console.log("handleTimelineMomentClick")
+    // move map
     this.setState({
       center: [
         moment.location.lng,
@@ -95,7 +96,7 @@ class App extends Component {
               <Panel moments={selectedMoments} mapMoving={this.state.mapMoving} />
             </div>
           </div>
-          <Timeline handleMomentClick={this.handleTimelineMomentClick.bind(this)} moments={selectedMoments} mapMoving={this.state.mapMoving} />
+          <Timeline handleMomentClick={this.handleTimelineMomentClick.bind(this)} selectedMomentIndex={this.state.momentIndex} moments={moments} mapMoving={this.state.mapMoving} />
         </div>
       </div>
     )

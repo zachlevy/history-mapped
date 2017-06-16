@@ -2,62 +2,68 @@ import React, { Component } from 'react'
 import Moment from './Moment'
 import SelectedMoment from './SelectedMoment'
 import { dateToCommonEra } from './helpers'
+import ReactIScroll from 'react-iscroll'
+import iScroll from 'iscroll'
 
 class Timeline extends Component {
+  // scroll to moment element with iscroll
+  scrollToSelectedMoment(momentIndex) {
+    console.log("scrollToSelectedMoment")
+    this.refs.iScroll.withIScroll((iScrollInstance) => {
+      iScrollInstance.scrollToElement(document.querySelector("#timeline-moment-" + momentIndex, 1000, true, null, iScroll.utils.ease.elastic))
+    })
+  }
+  // move the timeline when timeline updates
+  componentDidUpdate() {
+    this.scrollToSelectedMoment(this.props.selectedMomentIndex)
+    // return true
+  }
+  componentDidMount() {
+    // get the width of the timeline
+    // absolute position for iscroll doesn't let us to % width
+    this.timelineWidth = this.refs.timeline.offsetWidth
+    // initial timeline move
+    this.scrollToSelectedMoment(this.props.selectedMomentIndex)
+  }
   render() {
+    const momentWidth = this.timelineWidth / 5
     const moments = this.props.moments
     const momentsLength = moments.length
-    let selectedMoment
-    let previousMoment
-    let nextMoment
-    if (momentsLength === 2) {
-      // check if BCE or AD
-      if (new Date(moments[0].date).getUTCFullYear() > 0) {
-        // end of list
-        selectedMoment = moments[1]
-        previousMoment = moments[0]
-        nextMoment = null
-      } else {
-        // start of list
-        selectedMoment = moments[0]
-        previousMoment = null
-        nextMoment = moments[1]
-      }
-    } else {
-      // middle of list
-      selectedMoment = moments[1]
-      previousMoment = moments[0]
-      nextMoment = moments[2]
-    }
+    // dynamic overflow width based on number of moments in timeline
+    const timelineWidth = Math.floor(momentsLength * 100 / 3) + "%"
+    const selectedMomentHTML = (
+      <div className="row">
+        <div className="col-12">
+          <h2 className="text-center">
+            <span id="selectedTimelineDate">
+              {dateToCommonEra(new Date(moments[this.props.selectedMomentIndex].date))}
+            </span>
+          </h2>
+        </div>
+      </div>
+    )
     return (
-      <div className="timeline">
-        <div className="row">
-          <div className="col-12">
-            <h2 className="text-center">{dateToCommonEra(new Date(selectedMoment.date))}</h2>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <div className="timeline-selected-icon">
-              <i className="fa fa-circle"></i>
+      <div className="timeline" ref="timeline">
+        <ReactIScroll
+          ref="iScroll"
+          iScroll={iScroll}
+          options={{mouseWheel: true, scrollbars: true, scrollX: true, scrollY: false}}
+        >
+          <div style={{width: timelineWidth}}>
+            <div className="row">
+              <div className="col-12">
+                <hr className="timeline-line" />
+              </div>
             </div>
-            <hr className="timeline-line" />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12 col-sm-6">
-            <div className="timeline-previous-icon">
-              <i className="fa fa-circle-thin"></i>
+            <div className="row">
+              {
+                moments.map((moment,index) => {
+                  return <Moment width={momentWidth} key={index} momentIndex={index} selectedMoment={index === this.props.selectedMomentIndex} moment={moment} handleClick={this.props.handleMomentClick} />
+                })
+              }
             </div>
-            <Moment moment={previousMoment} handleClick={this.props.handleMomentClick} />
           </div>
-          <div className="col-12 col-sm-6">
-            <div className="timeline-next-icon">
-              <i className="fa fa-circle-thin"></i>
-            </div>
-            <Moment moment={nextMoment} handleClick={this.props.handleMomentClick} />
-          </div>
-        </div>
+        </ReactIScroll>
       </div>
     )
   }
