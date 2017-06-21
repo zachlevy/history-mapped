@@ -101,13 +101,23 @@
     }
   },{
     "date": "-000054-01-01T00:00:00.000Z",
-    "youtubeId": "GrW6epBAz9Q&t=3s",
+    "youtubeId": "GrW6epBAz9Q",
     "title": "Caesar in Britain II - There and Back Again",
     "author": "Historia Civilis",
     "wikipedia": "https://en.wikipedia.org/wiki/Caesar%27s_invasions_of_Britain",
     "location": {
       "lat": 51.1295,
       "lng": 1.3089
+    }
+  },{
+    "date": "-000053-01-01T00:00:00.000Z",
+    "youtubeId": "QqUnpCUi9KQ",
+    "title": "Caesar in Gaul: REVOLT!",
+    "author": "Historia Civilis",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ambiorix%27s_revolt",
+    "location": {
+      "lat": 49.980133,
+      "lng": 6.331935
     }
   },{
     "date": "-000053-05-06T00:00:00.000Z",
@@ -131,7 +141,7 @@
     }
   },{
     "date": "0009-09-09T00:00:00.000Z",
-    "youtubeId": "kmF3VBA_RcM&t=8s",
+    "youtubeId": "kmF3VBA_RcM",
     "title": "The Battle of the Teutoburg Forest",
     "author": "Historia Civilis",
     "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_the_Teutoburg_Forest",
@@ -300,6 +310,16 @@
       "lng": 0.48
     }
   },{
+    "date": "1097-07-01T00:00:00.000Z",
+    "youtubeId": "_hwq4_U4xH4",
+    "title": "First Crusade: Battle of Dorylaeum",
+    "author": "BazBattles",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Dorylaeum_(1097)",
+    "location": {
+      "lat": 39.788323,
+      "lng": 30.536076
+    }
+  },{
     "date": "1302-07-11T00:00:00.000Z",
     "youtubeId": "P5ksuFG8YaY",
     "title": "The Battle of the Golden Spurs",
@@ -328,6 +348,16 @@
     "location": {
       "lat": 57.633333,
       "lng": 18.283333
+    }
+  },{
+    "date": "1385-08-14T00:00:00.000Z",
+    "youtubeId": "jowtiKZ2Qnw",
+    "title": "The Battle of Aljubarrota",
+    "author": "BazBattles",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Aljubarrota",
+    "location": {
+      "lat": 39.5711627,
+      "lng": -8.9581915
     }
   },{
     "date": "1513-09-09T00:00:00.000Z",
