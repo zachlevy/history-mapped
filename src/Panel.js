@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import SelectedMoment from './SelectedMoment'
+import Footer from './Footer'
 
 class Panel extends Component {
   render() {
@@ -22,6 +23,11 @@ class Panel extends Component {
     return (
       <div className="panel col-12">
         <SelectedMoment moment={selectedMoment} mapMoving={this.props.mapMoving} />
+        <div className="row">
+          <div className="col-12">
+            <Footer />
+          </div>
+        </div>
       </div>
     )
   }
