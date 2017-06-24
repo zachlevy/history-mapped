@@ -23,11 +23,11 @@ class App extends Component {
   onMapLoad(map, event) {
     console.log("onMapLoad")
     this.map = map
-    map.loadImage('/icons/spear_icon_back_red_white_x256.png', (error, image) => {
+    map.loadImage('/icons/spear_icon_back_blue_x256.png', (error, image) => {
       if (error) throw error
       map.addImage('battle-icon', image)
     })
-    map.loadImage('./icons/spear_icon_back_red_squared_x462.png', (error, image) => {
+    map.loadImage('./icons/spear_icon_back_blue_squared_x462.png', (error, image) => {
       if (error) throw error
       map.addImage('battle-icon-selected', image)
     })

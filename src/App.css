@@ -22,6 +22,7 @@ body {
   margin: 0 auto;
   width: 1em;
   margin-top: -1.5em;
+  text-align: center;
 }
 .timeline-line {
   margin: 0.75em 0 0.75em 0;
@@ -36,11 +37,6 @@ footer {
   margin-top: 0.5em;
   color: white;
   text-align: center;
-}
-.gradient-red {
-  background: #870e14;
-  background: -webkit-linear-gradient(to right, #670003, #870e14);
-  background: linear-gradient(to right, #670003, #870e14);
 }
 .timeline {
   position: fixed;
@@ -74,11 +70,9 @@ footer {
   border-bottom-color: #dddddd;
 }
 .timeline .moment.selected-moment .arrow-up {
-  /*border-bottom-color: #670003;*/
   border-bottom-color: #142736;
 }
 .timeline .moment.selected-moment {
-  /*background-color: #870e14;*/
   background-color: #223544;
 }
 .timeline .moment.selected-moment p,

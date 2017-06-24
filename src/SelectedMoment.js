@@ -24,11 +24,11 @@ class SelectedMoment extends Component {
         </div>
         <div className="row">
           <div className="col-12">
-            {!this.props.mapMoving ? (
-              <div className="embed-responsive embed-responsive-16by9">
+            <div className="embed-responsive embed-responsive-16by9">
+              {!this.props.mapMoving ? (
                 <YouTube className="embed-responsive-item" videoId={moment.youtubeId} opts={playerOptions} onReady={this._onReady} />
-              </div>
-            ) : null }
+              ) : (<br />) }
+            </div>
           </div>
         </div>
       </div>

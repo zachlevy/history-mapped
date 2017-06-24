@@ -6,7 +6,7 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-        <p><a href="https://github.com/zachlevy/history-videos" target="_blank">Built</a> by Zach Levy &copy; {currentYear}. Last updated {timestampToDateString(process.env.REACT_APP_TIMESTAMP)}</p>
+        <p>Website <a href="https://github.com/zachlevy/history-videos" target="_blank">built</a> by Zach Levy &copy; {currentYear}. Last updated {timestampToDateString(process.env.REACT_APP_TIMESTAMP)}</p>
         <div className="row text-center">
           <div className="col-12">
             <ul className="list-inline social-links">
