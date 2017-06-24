@@ -7,10 +7,24 @@ class Moment extends Component {
     const moment = this.props.moment
     // put a default of 250px for moment with
     const momentWidth = this.props.width || "250px"
+    const watchBattleButton = (
+      <div className="row">
+        <div className="col-12 text-center">
+          <button className="btn btn-primary btn-sm" onClick={this.props.handleClick.bind(null, moment)}>
+            <i className="fa fa-eye"></i> Watch Battle
+          </button>
+        </div>
+      </div>
+    )
     return (
-      <div className="moment" style={{width: momentWidth}}>
+      <div className={"moment" + (this.props.selectedMoment ? " selected-moment" : "")} style={{width: momentWidth}}>
         <div className="timeline-previous-icon">
           <i className={"fa fa-circle" + (this.props.selectedMoment ? "" : "-thin")}></i>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <div className="arrow-up"></div>
+          </div>
         </div>
         <div className="row">
           <div className="col-12">
@@ -18,13 +32,7 @@ class Moment extends Component {
             <p className="text-center">{moment.title}</p>
           </div>
         </div>
-        <div className="row">
-          <div className="col-12 text-center">
-            <button className="btn btn-primary btn-sm" onClick={this.props.handleClick.bind(null, moment)}>
-              <i className="fa fa-eye"></i> Watch Battle
-            </button>
-          </div>
-        </div>
+        {this.props.selectedMoment ? "" : watchBattleButton}
       </div>
     )
   }

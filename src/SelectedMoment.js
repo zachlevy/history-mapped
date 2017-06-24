@@ -16,10 +16,10 @@ class SelectedMoment extends Component {
         <div className="row">
           <div className="col-12 col-sm-8">
             <h3 className="title">{moment.title}</h3>
-            <p>by <em>{moment.author}</em></p>
+            <p className="author">by <em>{moment.author}</em></p>
           </div>
           <div className="col-12 col-sm-4">
-            <h2>{dateToCommonEra(new Date(moment.date))}</h2>
+            <h2 className="date">{dateToCommonEra(new Date(moment.date))}</h2>
           </div>
         </div>
         <div className="row">

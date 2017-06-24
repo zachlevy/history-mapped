@@ -73,7 +73,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container-fluid">
-          <div className="row">
+          <div className="row no-gutters">
             <div className="col-12 col-sm-6">
               <ReactMapboxGl
                 style="mapbox://styles/mapbox/streets-v8"

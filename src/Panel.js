@@ -20,7 +20,7 @@ class Panel extends Component {
       selectedMoment = moments[1]
     }
     return (
-      <div className="panel">
+      <div className="panel col-12">
         <SelectedMoment moment={selectedMoment} mapMoving={this.props.mapMoving} />
       </div>
     )
