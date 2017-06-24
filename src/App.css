@@ -1,3 +1,6 @@
+body {
+  background-color: #670003;
+}
 .selected-moment {
 }
 .selected-moment .title {
@@ -7,10 +10,10 @@
 .timeline-next-icon {
   margin: 0 auto;
   width: 1em;
-  margin-top: -1em;
+  margin-top: -1.5em;
 }
 .timeline-line {
-  margin: 0.25em 0;
+  margin: 0.75em 0 0.75em 0;
 }
 .timeline-selected-icon {
   margin: 0 auto;
@@ -35,4 +38,7 @@ footer {
   bottom: 0;
   background: white;
   width: 100%;
+}
+.timeline .moment:nth-child(even) {
+  background-color: #efefef;
 }

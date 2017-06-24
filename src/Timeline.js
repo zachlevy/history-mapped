@@ -30,7 +30,7 @@ class Timeline extends Component {
     const moments = this.props.moments
     const momentsLength = moments.length
     // dynamic overflow width based on number of moments in timeline
-    const timelineWidth = Math.floor(momentsLength * 100 / 3) + "%"
+    const timelineWidth = Math.floor(momentsLength * 100 / 5) + "%"
     const selectedMomentHTML = (
       <div className="row">
         <div className="col-12">

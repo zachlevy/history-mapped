@@ -21,11 +21,7 @@ class Panel extends Component {
     }
     return (
       <div className="panel">
-        <div className="row">
-          <div className="col-12">
-            <SelectedMoment moment={selectedMoment} mapMoving={this.props.mapMoving} />
-          </div>
-        </div>
+        <SelectedMoment moment={selectedMoment} mapMoving={this.props.mapMoving} />
       </div>
     )
   }
