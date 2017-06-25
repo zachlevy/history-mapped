@@ -76,7 +76,7 @@ class App extends Component {
           <div className="row no-gutters">
             <div className="col-12 col-sm-6">
               <ReactMapboxGl
-                style="mapbox://styles/mapbox/streets-v8"
+                style="mapbox://styles/zachlevy/cj4cydzuz5nfh2sobv4nmmmfm"
                 accessToken="pk.eyJ1IjoiemFjaGxldnkiLCJhIjoiY2lobWExbHJyMG8yNnQ0bHpmYW1zZXV2YyJ9.5RDwdgrQtOdHCOapEwe6eA"
                 containerStyle={{height: "100vh", width: "100%"}}
                 center={this.state.center}

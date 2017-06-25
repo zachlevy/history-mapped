@@ -15,7 +15,9 @@ body {
   color: white;
 }
 .selected-moment .date {
+  margin-top: 0.5em;
   color: white;
+  text-align: right;
 }
 .timeline-previous-icon,
 .timeline-next-icon {
@@ -55,7 +57,6 @@ footer {
 }
 .panel {
   background-color: #142736;
-  /*background: url("http://cdn.wallpapersafari.com/36/17/H0shLD.jpg");*/
   height: 100%;
 }
 .arrow-up {

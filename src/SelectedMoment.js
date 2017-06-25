@@ -19,7 +19,7 @@ class SelectedMoment extends Component {
             <p className="author">by <em>{moment.author}</em></p>
           </div>
           <div className="col-12 col-sm-4">
-            <h2 className="date">{dateToCommonEra(new Date(moment.date))}</h2>
+            <h3 className="date">{dateToCommonEra(new Date(moment.date))}</h3>
           </div>
         </div>
         <div className="row">
