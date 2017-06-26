@@ -23,11 +23,11 @@ class App extends Component {
   onMapLoad(map, event) {
     console.log("onMapLoad")
     this.map = map
-    map.loadImage('./icons/spear_icon_back_blue_x256.png', (error, image) => {
+    map.loadImage('./icons/spear_icon_blue_white_x256.png', (error, image) => {
       if (error) throw error
       map.addImage('battle-icon', image)
     })
-    map.loadImage('./icons/spear_icon_back_blue_squared_x462.png', (error, image) => {
+    map.loadImage('./icons/spear_icon_blue_white_squared_x462.png', (error, image) => {
       if (error) throw error
       map.addImage('battle-icon-selected', image)
     })
@@ -73,7 +73,6 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container-fluid">
-          <Timeline handleMomentClick={this.handleTimelineMomentClick.bind(this)} selectedMomentIndex={this.state.momentIndex} moments={moments} mapMoving={this.state.mapMoving} />
           <div className="row no-gutters">
             <div className="col-12 col-sm-6">
               <ReactMapboxGl
@@ -109,6 +108,7 @@ class App extends Component {
               <Panel moments={selectedMoments} mapMoving={this.state.mapMoving} />
             </div>
           </div>
+          <Timeline handleMomentClick={this.handleTimelineMomentClick.bind(this)} selectedMomentIndex={this.state.momentIndex} moments={moments} mapMoving={this.state.mapMoving} />
         </div>
       </div>
     )
