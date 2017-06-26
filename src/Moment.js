@@ -17,7 +17,7 @@ class Moment extends Component {
       </div>
     )
     return (
-      <div className={"moment" + (this.props.selectedMoment ? " selected-moment" : "")} style={{width: momentWidth}}>
+      <div className={"moment" + (this.props.selectedMoment ? " selected-moment" : "")}>
         <div className="timeline-previous-icon">
           <i className={"fa fa-circle" + (this.props.selectedMoment ? "" : "-thin")}></i>
         </div>
