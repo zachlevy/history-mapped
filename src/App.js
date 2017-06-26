@@ -14,7 +14,8 @@ class App extends Component {
       center: [12.5359979, 41.9100711],
       zoom: [3],
       momentIndex: Math.floor(Math.random() * moments.length - 1) + 1,
-      mapMoving: true
+      mapMoving: true,
+      pitch: 0
     }
   }
   componentWillMount() {
@@ -47,7 +48,8 @@ class App extends Component {
       ],
       zoom: [12],
       momentIndex: moments.findIndex((m) => {return m.youtubeId === moment.youtubeId}),
-      mapMoving: true
+      mapMoving: true,
+      pitch: 0
     })
   }
   handleMapMarkerClick(moment, event) {
@@ -59,12 +61,17 @@ class App extends Component {
       ],
       zoom: [12],
       momentIndex: moments.findIndex((m) => {return m.youtubeId === moment.youtubeId}),
-      mapMoving: true
+      mapMoving: true,
+      pitch: 0
     })
   }
   onMoveEnd(map, event) {
     console.log("onMoveEnd")
-    this.setState({mapMoving: false})
+    this.setState({pitch: 60})
+    // wait for pitch to change
+    setTimeout(() => {
+      this.setState({mapMoving: false})
+    }, 330)
   }
   render() {
     const selectedMoments = moments.sort((a, b) => { return new Date(a.date) - new Date(b.date)}).slice(Math.max(this.state.momentIndex - 1, 0), this.state.momentIndex + 2)
@@ -83,6 +90,7 @@ class App extends Component {
                 zoom={this.state.zoom}
                 onStyleLoad={this.onMapLoad.bind(this)}
                 onMoveEnd={this.onMoveEnd.bind(this)}
+                pitch={this.state.pitch}
               >
                 <Layer
                   type="symbol"
