@@ -73,6 +73,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container-fluid">
+          <Timeline handleMomentClick={this.handleTimelineMomentClick.bind(this)} selectedMomentIndex={this.state.momentIndex} moments={moments} mapMoving={this.state.mapMoving} />
           <div className="row no-gutters">
             <div className="col-12 col-sm-6">
               <ReactMapboxGl
@@ -108,7 +109,6 @@ class App extends Component {
               <Panel moments={selectedMoments} mapMoving={this.state.mapMoving} />
             </div>
           </div>
-          <Timeline handleMomentClick={this.handleTimelineMomentClick.bind(this)} selectedMomentIndex={this.state.momentIndex} moments={moments} mapMoving={this.state.mapMoving} />
         </div>
       </div>
     )

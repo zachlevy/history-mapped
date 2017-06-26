@@ -41,8 +41,6 @@ footer {
   text-align: center;
 }
 .timeline {
-  position: fixed;
-  bottom: 0;
   background: white;
   width: 100%;
 }
