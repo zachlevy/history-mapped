@@ -9,17 +9,19 @@
     "react-dom": "^15.5.4",
     "react-iscroll": "^1.1.4",
     "react-mapbox-gl": "^1.11.0",
-    "react-youtube": "^7.4.0"
+    "react-transition-group": "^1.2.0",
+    "react-youtube": "^7.4.0",
+    "reactstrap": "^4.8.0"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
   },
   "scripts": {
-    "start": "REACT_APP_GA_ID=UA-99590391-2 REACT_APP_TIMESTAMP=\"$(date +%s)\" react-scripts start",
+    "start": "REACT_APP_API_URL=http://localhost:3001 REACT_APP_GA_ID=UA-99590391-2 REACT_APP_TIMESTAMP=\"$(date +%s)\" react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "REACT_APP_GA_ID=UA-99590391-1 REACT_APP_TIMESTAMP=\"$(date +%s)\" npm run build && aws s3 sync build/ s3://www.historeos.com",
+    "deploy": "REACT_APP_API_URL=http://api.zachlevy.me REACT_APP_GA_ID=UA-99590391-1 REACT_APP_TIMESTAMP=\"$(date +%s)\" npm run build && aws s3 sync build/ s3://www.historeos.com",
     "open": "open http://www.historeos.com"
   }
 }

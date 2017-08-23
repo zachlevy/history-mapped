@@ -80,3 +80,13 @@ footer {
 .timeline .moment.selected-moment span {
   color: white;
 }
+
+.form-error {
+  background-color: #d9534f;
+  color: white;
+  padding: 0.5em 1em;
+  margin-bottom: 0.5em;
+}
+.form-error ul {
+  margin: 0;
+}
