@@ -26,19 +26,19 @@ class Footer extends Component {
     e.preventDefault()
     console.log("handleSubmit")
 
-    fetch(`${process.env.REACT_APP_API_URL}/subscriptions`, {
+    fetch(`${process.env.REACT_APP_API_URL}/feedbacks`, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        subscription: {
+        feedback: {
           source: "history-videos feedback",
-          name: this.state.name || null,
-          email: this.state.email || null,
           body: {
-            message: this.state.message || null
+            message: this.state.message || null,
+            name: this.state.name || null,
+            email: this.state.email || null
           }
         }
       })
@@ -89,12 +89,12 @@ class Footer extends Component {
               </ul>
             </div>
             <form onSubmit={this.handleSubmit.bind(this)}>
+              <label htmlFor="message"><span style={{color: "red"}}>*</span>Message</label>
+              <textarea id="message" className="form-control" type="text" onKeyUp={this.handleInput.bind(this, "message")}></textarea>
               <label htmlFor="name">Name</label>
               <input id="name" className="form-control" type="text" onKeyUp={this.handleInput.bind(this, "name")} />
               <label htmlFor="name">Email</label>
               <input id="email" className="form-control" type="text" onKeyUp={this.handleInput.bind(this, "email")} />
-              <label htmlFor="message">Message</label>
-              <textarea id="message" className="form-control" type="text" onKeyUp={this.handleInput.bind(this, "message")}></textarea>
             </form>
           </ModalBody>
           <ModalFooter>
