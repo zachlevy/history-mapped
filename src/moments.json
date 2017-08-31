@@ -159,7 +159,7 @@
       "lat": 52.283333,
       "lng": 8.05
     }
-  },{
+  }, {
     "date": "0060-01-01T12:00:00.000Z",
     "youtubeId": "npwM2touF08",
     "title": "Boudicca",
@@ -168,6 +168,16 @@
     "location": {
       "lat": 52.65625,
       "lng": -1.927139
+    }
+  }, {
+    "date": "1099-06-07T12:00:00.000Z",
+    "youtubeId": "2loWiJSUDIQ",
+    "title": "The Siege of Jerusalem",
+    "author": "BazBattles",
+    "wikipedia": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(1099)",
+    "location": {
+      "lat": 31.783333,
+      "lng": 35.216667
     }
   },{
     "date": "1099-06-07T12:00:00.000Z",
