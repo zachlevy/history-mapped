@@ -21,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "REACT_APP_API_URL=http://api.zachlevy.me REACT_APP_GA_ID=UA-99590391-1 REACT_APP_TIMESTAMP=\"$(date +%s)\" npm run build && aws s3 sync build/ s3://www.historeos.com",
-    "open": "open http://www.historeos.com"
+    "deploy": "REACT_APP_API_URL=http://api.zachlevy.me REACT_APP_GA_ID=UA-99590391-1 REACT_APP_TIMESTAMP=\"$(date +%s)\" npm run build && aws s3 sync build/ s3://www.historymapped.com",
+    "open": "open http://www.historymapped.com"
   }
 }
