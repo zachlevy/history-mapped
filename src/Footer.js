@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { currentYear, timestampToDateString } from './helpers'
+import { currentYear, timestampToDateString, buildFormErrors } from './helpers'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'
 
 class Footer extends Component {
@@ -58,8 +58,11 @@ class Footer extends Component {
         // created successfully
         res.json().then((body) => {
           console.log("success!", body)
-          this.setState({feedback: body})
-          this.toggle()
+          this.setState({errors: {"Success!": ["form sent successfully"]}}) // follow rails api error format
+          this.refs.message.value = ""
+          this.refs.email.value = ""
+          this.refs.name.value = ""
+          // this.toggle()
         })
       } else {
         // some other error
@@ -73,28 +76,21 @@ class Footer extends Component {
   }
 
   render() {
+    const errors = buildFormErrors(this.state.errors)
     return (
       <footer>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Suggestions?</ModalHeader>
           <ModalBody>
             <p>Hey, Got some feedback for the website? Bugs, Features, Let me know! - Zach</p>
-            <div className={"" + (this.state.errors.email ? " form-error" : "")}>
-              <ul className="list-unstyled">
-                {
-                  this.state.errors.email && this.state.errors.email.map((error, index) => {
-                    return <li key={index}>{"Email " + error}</li>
-                  })
-                }
-              </ul>
-            </div>
+            {errors}
             <form onSubmit={this.handleSubmit.bind(this)}>
               <label htmlFor="message"><span style={{color: "red"}}>*</span>Message</label>
-              <textarea id="message" className="form-control" type="text" onKeyUp={this.handleInput.bind(this, "message")}></textarea>
+              <textarea ref="message" id="message" className="form-control" type="text" onKeyUp={this.handleInput.bind(this, "message")}></textarea>
               <label htmlFor="name">Name</label>
-              <input id="name" className="form-control" type="text" onKeyUp={this.handleInput.bind(this, "name")} />
+              <input ref="name" id="name" className="form-control" type="text" onKeyUp={this.handleInput.bind(this, "name")} />
               <label htmlFor="name">Email</label>
-              <input id="email" className="form-control" type="text" onKeyUp={this.handleInput.bind(this, "email")} />
+              <input ref="email" id="email" className="form-control" type="text" onKeyUp={this.handleInput.bind(this, "email")} />
             </form>
           </ModalBody>
           <ModalFooter>
