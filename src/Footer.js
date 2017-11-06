@@ -102,7 +102,7 @@ class Footer extends Component {
         <p>
           Website <a href="https://github.com/zachlevy/history-videos" target="_blank">built</a> by Zach Levy
           &copy; {currentYear}.
-          Last updated {timestampToDateString(process.env.REACT_APP_TIMESTAMP)}. <Button disable={this.state.feedback} size="sm" color="danger" onClick={this.toggle.bind(this)}>Suggestions?</Button>
+          Last updated {timestampToDateString(process.env.REACT_APP_TIMESTAMP)}. <Button disabled={this.state.feedback} size="sm" color="danger" onClick={this.toggle.bind(this)}>Suggestions?</Button>
         </p>
         <div className="row text-center">
           <div className="col-12">

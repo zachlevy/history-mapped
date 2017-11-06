@@ -86,8 +86,6 @@ class App extends Component {
   }
   render() {
     const selectedMoments = moments.sort((a, b) => { return new Date(a.date) - new Date(b.date)}).slice(Math.max(this.state.momentIndex - 1, 0), this.state.momentIndex + 2)
-    console.log(Math.max(this.state.momentIndex - 1, 0), this.state.momentIndex + 2)
-    console.log(selectedMoments)
     return (
       <div className="App">
         <div className="container-fluid">
