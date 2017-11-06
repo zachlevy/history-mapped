@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { dateToCommonEra } from './helpers'
+import { dateToCommonEra, isWithinDaysAgo } from './helpers'
 
 class Moment extends Component {
   render() {
@@ -16,6 +16,11 @@ class Moment extends Component {
         </div>
       </div>
     )
+    let newMomentTag
+    if (isWithinDaysAgo(new Date(moment.dateAdded), 30)) {
+      newMomentTag = <span className="new-moment">New</span>
+    }
+
     return (
       <div className={"moment" + (this.props.selectedMoment ? " selected-moment" : "")}>
         <div className="timeline-previous-icon">
@@ -28,7 +33,10 @@ class Moment extends Component {
         </div>
         <div className="row">
           <div className="col-12">
-            <p className="text-center"><span id={"timeline-moment-" + this.props.momentIndex}>{dateToCommonEra(new Date(moment.date))}</span></p>
+            <p className="text-center">
+              <span id={"timeline-moment-" + this.props.momentIndex}>{dateToCommonEra(new Date(moment.date))}</span>
+              {newMomentTag}
+            </p>
             <p className="text-center">{moment.title}</p>
           </div>
         </div>
