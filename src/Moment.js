@@ -16,6 +16,12 @@ class Moment extends Component {
         </div>
       </div>
     )
+    const newMoment = moment.dateAdded
+    let newMomentTag
+    if (newMoment) {
+      newMomentTag = <span className="new-moment">New</span>
+    }
+
     return (
       <div className={"moment" + (this.props.selectedMoment ? " selected-moment" : "")}>
         <div className="timeline-previous-icon">
@@ -28,7 +34,10 @@ class Moment extends Component {
         </div>
         <div className="row">
           <div className="col-12">
-            <p className="text-center"><span id={"timeline-moment-" + this.props.momentIndex}>{dateToCommonEra(new Date(moment.date))}</span></p>
+            <p className="text-center">
+              <span id={"timeline-moment-" + this.props.momentIndex}>{dateToCommonEra(new Date(moment.date))}</span>
+              {newMomentTag}
+            </p>
             <p className="text-center">{moment.title}</p>
           </div>
         </div>
