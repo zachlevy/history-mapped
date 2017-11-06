@@ -22,7 +22,11 @@ class Panel extends Component {
     }
     return (
       <div className="panel col-12">
-        <SelectedMoment moment={selectedMoment} mapMoving={this.props.mapMoving} />
+        <SelectedMoment
+          moment={selectedMoment}
+          mapMoving={this.props.mapMoving}
+          handleWatchedVideo={this.props.handleWatchedVideo}
+        />
         <div className="row">
           <div className="col-12">
             <Footer />

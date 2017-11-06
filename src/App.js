@@ -6,6 +6,7 @@ import Panel from './Panel'
 import 'mapbox-gl'
 import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl'
 import Footer from './Footer'
+import Cookies from "js-cookie"
 
 class App extends Component {
   constructor(props) {
@@ -15,10 +16,9 @@ class App extends Component {
       zoom: [3],
       momentIndex: Math.floor(Math.random() * moments.length - 1) + 1,
       mapMoving: true,
-      pitch: 0
+      pitch: 0,
+      watchedVideos: Cookies.getJSON("watchedVideos") || []
     }
-  }
-  componentWillMount() {
 
   }
   onMapLoad(map, event) {
@@ -73,6 +73,17 @@ class App extends Component {
       this.setState({mapMoving: false})
     }, 330)
   }
+  handleWatchedVideo(watchedVideoId) {
+    const watchedVideos = this.state.watchedVideos
+    // if not already watched, add videoid to array of watched videos in cookies
+    if (watchedVideos.indexOf(watchedVideoId) === -1) {
+      watchedVideos.push(watchedVideoId)
+      // set the cookie
+      Cookies.set("watchedVideos", watchedVideos)
+      // update the state
+      this.setState({watchedVideos: watchedVideos})
+    }
+  }
   render() {
     const selectedMoments = moments.sort((a, b) => { return new Date(a.date) - new Date(b.date)}).slice(Math.max(this.state.momentIndex - 1, 0), this.state.momentIndex + 2)
     console.log(Math.max(this.state.momentIndex - 1, 0), this.state.momentIndex + 2)
@@ -113,10 +124,20 @@ class App extends Component {
               </ReactMapboxGl>
             </div>
             <div className="col-12 col-sm-6">
-              <Panel moments={selectedMoments} mapMoving={this.state.mapMoving} />
+              <Panel
+                moments={selectedMoments}
+                mapMoving={this.state.mapMoving}
+                handleWatchedVideo={this.handleWatchedVideo.bind(this)}
+              />
             </div>
           </div>
-          <Timeline handleMomentClick={this.handleTimelineMomentClick.bind(this)} selectedMomentIndex={this.state.momentIndex} moments={moments} mapMoving={this.state.mapMoving} />
+          <Timeline
+            handleMomentClick={this.handleTimelineMomentClick.bind(this)}
+            selectedMomentIndex={this.state.momentIndex}
+            moments={moments}
+            mapMoving={this.state.mapMoving}
+            watchedVideos={this.state.watchedVideos}
+          />
         </div>
       </div>
     )

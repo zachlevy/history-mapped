@@ -16,7 +16,6 @@ class Timeline extends Component {
   // move the timeline when timeline updates
   componentDidUpdate() {
     this.scrollToSelectedMoment(this.props.selectedMomentIndex)
-    // return true
   }
   componentDidMount() {
     // get the width of the timeline
@@ -58,7 +57,15 @@ class Timeline extends Component {
             <div className="row">
               {
                 moments.map((moment,index) => {
-                  return <Moment width={momentWidth} key={index} momentIndex={index} selectedMoment={index === this.props.selectedMomentIndex} moment={moment} handleClick={this.props.handleMomentClick} />
+                  return <Moment
+                    width={momentWidth}
+                    key={index}
+                    momentIndex={index}
+                    selectedMoment={index === this.props.selectedMomentIndex}
+                    moment={moment}
+                    handleClick={this.props.handleMomentClick}
+                    watched={this.props.watchedVideos.indexOf(moment.youtubeId) !== -1}
+                  />
                 })
               }
             </div>

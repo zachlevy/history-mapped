@@ -7,11 +7,17 @@ class Moment extends Component {
     const moment = this.props.moment
     // put a default of 250px for moment with
     const momentWidth = this.props.width || "250px"
+    let watchBattleButtonText
+    if (this.props.watched) {
+      watchBattleButtonText = "Rewatch Battle"
+    } else {
+      watchBattleButtonText = "Watch Battle"
+    }
     const watchBattleButton = (
       <div className="row">
         <div className="col-12 text-center">
           <button className="btn btn-primary btn-sm" onClick={this.props.handleClick.bind(null, moment)}>
-            <i className="fa fa-eye"></i> Watch Battle
+            <i className="fa fa-eye"></i> {watchBattleButtonText}
           </button>
         </div>
       </div>

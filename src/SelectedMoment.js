@@ -4,6 +4,11 @@ import { dateToCommonEra } from './helpers'
 import YouTube from 'react-youtube'
 
 class SelectedMoment extends Component {
+  // when youtube video is played
+  handleOnPlay(e) {
+    const watchedVideoId = this.props.moment.youtubeId
+    this.props.handleWatchedVideo(watchedVideoId)
+  }
   render() {
     const moment = this.props.moment
     const playerOptions = {
@@ -26,7 +31,13 @@ class SelectedMoment extends Component {
           <div className="col-12">
             <div className="embed-responsive embed-responsive-16by9">
               {!this.props.mapMoving ? (
-                <YouTube className="embed-responsive-item" videoId={moment.youtubeId} opts={playerOptions} onReady={this._onReady} />
+                <YouTube
+                  className="embed-responsive-item"
+                  videoId={moment.youtubeId}
+                  opts={playerOptions}
+                  onReady={this._onReady}
+                  onPlay={this.handleOnPlay.bind(this)}
+                />
               ) : (<br />) }
             </div>
           </div>
