@@ -58,6 +58,5 @@ export const buildFormErrors = (apiErrors) => {
 export const isWithinDaysAgo = (date, daysAgo) => {
   let dateAgo = new Date()
   dateAgo.setDate(dateAgo.getDate() - daysAgo)
-  console.log("date", date, "dateAgo", dateAgo, "date > dateAgo", date > dateAgo)
   return date > dateAgo
 }
