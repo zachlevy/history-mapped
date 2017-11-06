@@ -45,6 +45,15 @@ footer {
   width: 100%;
   bottom: 0;
   position: fixed;
+  overflow: auto;
+  white-space: nowrap;
+}
+.moment {
+  display: inline-block;
+  text-decoration: none;
+}
+.moment .selected-moment .watch-battle-button {
+  visibility: hidden;
 }
 .timeline .moment:nth-child(even) {
   background-color: #efefef;
