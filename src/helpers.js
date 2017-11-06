@@ -52,3 +52,12 @@ export const buildFormErrors = (apiErrors) => {
   )
   return errorsList
 }
+
+// takes in a date object and an integer of days ago
+// returns if that date is between today and days ago
+export const isWithinDaysAgo = (date, daysAgo) => {
+  let dateAgo = new Date()
+  dateAgo.setDate(dateAgo.getDate() - daysAgo)
+  console.log("date", date, "dateAgo", dateAgo, "date > dateAgo", date > dateAgo)
+  return date > dateAgo
+}

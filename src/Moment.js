@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { dateToCommonEra } from './helpers'
+import { dateToCommonEra, isWithinDaysAgo } from './helpers'
 
 class Moment extends Component {
   render() {
@@ -16,9 +16,8 @@ class Moment extends Component {
         </div>
       </div>
     )
-    const newMoment = moment.dateAdded
     let newMomentTag
-    if (newMoment) {
+    if (isWithinDaysAgo(new Date(moment.dateAdded), 30)) {
       newMomentTag = <span className="new-moment">New</span>
     }
 
