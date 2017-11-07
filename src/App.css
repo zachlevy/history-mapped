@@ -7,17 +7,22 @@ body {
 }
 .selected-moment {
 }
+.selected-moment .selected-moment-row {
+  background-color: #efefef;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #dddddd;
+}
 .selected-moment .title {
   margin-top: 0.5em;
-  color: white;
+  color: #142736;
 }
 .selected-moment .author {
-  color: white;
+  color: #555555;
 }
 .selected-moment .date {
   margin-top: 0.5em;
-  color: white;
   text-align: right;
+  color: #142736;
 }
 .timeline-previous-icon,
 .timeline-next-icon {

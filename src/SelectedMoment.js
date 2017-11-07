@@ -18,7 +18,7 @@ class SelectedMoment extends Component {
     }
     return (
       <div className="selected-moment">
-        <div className="row">
+        <div className="row selected-moment-row">
           <div className="col-12 col-sm-8">
             <h3 className="title">{moment.title}</h3>
             <p className="author">by <em>{moment.author}</em></p>

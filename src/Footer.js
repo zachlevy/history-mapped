@@ -100,8 +100,8 @@ class Footer extends Component {
         </Modal>
 
         <p>
-          Website <a href="https://github.com/zachlevy/history-videos" target="_blank">built</a> by Zach Levy
-          &copy; {currentYear}.
+          <a href="https://github.com/zachlevy/history-videos" target="_blank">Built</a> by <a href="https://www.zachlevy.me" target="_blank">Zach Levy</a> &amp; <a href="https://github.com/zachlevy/history-videos/graphs/contributors" target="_blank">others</a>
+          &nbsp;&copy; {currentYear}.
           Last updated {timestampToDateString(process.env.REACT_APP_TIMESTAMP)}. <Button disabled={this.state.feedback} size="sm" color="danger" onClick={this.toggle.bind(this)}>Suggestions?</Button>
         </p>
         <div className="row text-center">
