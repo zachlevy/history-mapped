@@ -7,7 +7,30 @@ class Timeline extends Component {
   componentDidMount() {
     // initial timeline move
     scrollToSelectedMoment(this.props.selectedMomentIndex)
+
+    document.getElementById("timeline").addEventListener('wheel', this.handleScroll)
   }
+
+  componentWillUnmount() {
+    document.getElementById("timeline").removeEventListener('wheel', this.handleScroll)
+  }
+
+  // intercept scroll events for simultaneous horizontal and vertical scrolling options
+  handleScroll(e) {
+    const firstMomentElement = document.getElementById(`timeline-moment-0`)
+    const firstMomentLeft = firstMomentElement.getBoundingClientRect().left
+    // if scrolling horizontally with trackpad, do nothing
+    if (e.deltaY && e.deltaX) {
+      return
+    }
+    // if scrolling vertically only
+    if (e.deltaY) {
+      e.preventDefault()
+      const scrollToPosition = Math.abs(firstMomentLeft) + e.deltaY
+      document.getElementById("timeline").scrollTo(scrollToPosition, 0)
+    }
+  }
+
   // move the timeline when timeline updates
   componentWillReceiveProps(newProps) {
     if (newProps.selectedMomentIndex !== this.props.selectedMomentIndex) {
