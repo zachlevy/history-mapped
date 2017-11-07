@@ -45,7 +45,7 @@ class SelectedMoment extends Component {
             </button>
           </div>
         </div>
-        <div className={"row" + (this.state.showVideoOnMobile ? "" : " d-none d-xs-block")}>
+        <div className={"row" + (this.state.showVideoOnMobile ? "" : " d-none d-sm-block")}>
           <div className="col-12">
             <div className="embed-responsive embed-responsive-16by9">
               {!this.props.mapMoving ? (
