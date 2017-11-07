@@ -85,24 +85,6 @@ footer {
   border-right: 125px solid transparent;
   border-bottom: 5px solid #eeeeee;
 }
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575px) {
-  .arrow-up {
-    border-left: 75px solid transparent;
-    border-right: 75px solid transparent;
-  }
-  .moment p {
-    padding-left: 0.2em;
-    padding-right: 0.2em;
-  }
-  .panel-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-  }
-}
 .timeline .moment:nth-child(even) .arrow-up {
   border-bottom-color: #dddddd;
 }
@@ -133,4 +115,25 @@ footer {
 }
 .form-error ul {
   margin: 0;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .arrow-up {
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+  }
+  .moment p {
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+  }
+  .panel-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .timeline .moment span.new-moment {
+    padding: 0em 0.2em;
+  }
 }
