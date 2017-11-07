@@ -22,7 +22,6 @@ class App extends Component {
 
   }
   onMapLoad(map, event) {
-    console.log("onMapLoad")
     this.map = map
     map.loadImage('./icons/spear_icon_blue_white_x256.png', (error, image) => {
       if (error) throw error
@@ -39,7 +38,6 @@ class App extends Component {
 
   }
   handleTimelineMomentClick(moment, event) {
-    console.log("handleTimelineMomentClick")
     // move map
     this.setState({
       center: [
@@ -53,7 +51,6 @@ class App extends Component {
     })
   }
   handleMapMarkerClick(moment, event) {
-    console.log("handleMapMarkerClick")
     this.setState({
       center: [
         moment.location.lng,
@@ -66,7 +63,6 @@ class App extends Component {
     })
   }
   onMoveEnd(map, event) {
-    console.log("onMoveEnd")
     this.setState({pitch: 60})
     // wait for pitch to change
     setTimeout(() => {
@@ -90,7 +86,14 @@ class App extends Component {
       <div className="App">
         <div className="container-fluid">
           <div className="row no-gutters">
-            <div className="col-12 col-sm-6">
+            <div className="col-12 col-sm-6 order-sm-2 panel-wrapper">
+              <Panel
+                moments={selectedMoments}
+                mapMoving={this.state.mapMoving}
+                handleWatchedVideo={this.handleWatchedVideo.bind(this)}
+              />
+            </div>
+            <div className="col-12 col-sm-6 order-sm-1">
               <ReactMapboxGl
                 style="mapbox://styles/zachlevy/cj4cydzuz5nfh2sobv4nmmmfm"
                 accessToken="pk.eyJ1IjoiemFjaGxldnkiLCJhIjoiY2lobWExbHJyMG8yNnQ0bHpmYW1zZXV2YyJ9.5RDwdgrQtOdHCOapEwe6eA"
@@ -120,13 +123,6 @@ class App extends Component {
                 </Layer>
 
               </ReactMapboxGl>
-            </div>
-            <div className="col-12 col-sm-6">
-              <Panel
-                moments={selectedMoments}
-                mapMoving={this.state.mapMoving}
-                handleWatchedVideo={this.handleWatchedVideo.bind(this)}
-              />
             </div>
           </div>
           <Timeline

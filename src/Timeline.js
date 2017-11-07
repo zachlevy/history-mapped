@@ -56,6 +56,7 @@ class Timeline extends Component {
         <div className="row">
           <div className="col-12">
             <hr className="timeline-line" />
+            <br />
           </div>
         </div>
         <div className="moments-wrapper">

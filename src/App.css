@@ -53,11 +53,15 @@ footer {
   overflow: auto;
   white-space: nowrap;
 }
+.timeline-line {
+  width: 100%;
+  position: fixed;
+}
 .moment {
   display: inline-block;
   text-decoration: none;
 }
-.moment .selected-moment .watch-battle-button {
+.moment.selected-moment .watch-battle-button {
   visibility: hidden;
 }
 .timeline .moment:nth-child(even) {
@@ -80,6 +84,24 @@ footer {
   border-left: 125px solid transparent;
   border-right: 125px solid transparent;
   border-bottom: 5px solid #eeeeee;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .arrow-up {
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+  }
+  .moment p {
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+  }
+  .panel-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
 }
 .timeline .moment:nth-child(even) .arrow-up {
   border-bottom-color: #dddddd;
