@@ -75,5 +75,28 @@ export const scrollToSelectedMoment = (momentIndex) => {
   const toScrollToWidth = toScrollToElement.getBoundingClientRect().width
   const timelineWidth = timelineElement.getBoundingClientRect().width
   const scrollToPosition = (toScrollToLeft - firstMomentLeft) - (timelineWidth / 2) + (toScrollToWidth / 2)
-  document.getElementById("timeline").scrollTo(scrollToPosition, 0)
+  autoScrollTo(scrollToPosition, 3000)
+}
+
+// automatically scrolls to the position in steps, works with the recursiveScrollTo function
+// could definitely be refactored to be better
+const autoScrollTo = (destination, duration) => {
+  const tickDuration = 5 // in ms
+  const remainingTicks = duration / tickDuration
+  const currentPosition = document.getElementById(`timeline-moment-0`).getBoundingClientRect().left
+  const remainingDistance = Math.abs(currentPosition) - destination
+  const tickDistance = remainingDistance / remainingTicks
+  recursiveScrollTo(destination, duration, tickDuration, tickDistance, remainingTicks)
+}
+
+// separate function so that you dont have to get the current position multiple times
+// could definitely be refactored to be better
+const recursiveScrollTo = (destination, duration, tickDuration, tickDistance, ticks) => {
+  if (ticks < 0) {
+    return
+  }
+  setTimeout(function() {
+    document.getElementById("timeline").scrollTo(destination + tickDistance * ticks, 0)
+    recursiveScrollTo(destination, duration, tickDuration, tickDistance, ticks - 1)
+  }, tickDuration);
 }
