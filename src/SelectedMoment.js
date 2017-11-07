@@ -39,9 +39,11 @@ class SelectedMoment extends Component {
           </div>
         </div>
         <div className={"row" + (this.state.showVideoOnMobile ? " d-none" : " d-sm-none")}>
-          <button className="btn btn-primary" onClick={this.handleShowVideoOnMobile.bind(this)}>
-            Watch Battle
-          </button>
+          <div className="col-12 text-center">
+            <button className="btn btn-danger" onClick={this.handleShowVideoOnMobile.bind(this)}>
+              <i className="fa fa-youtube-play"></i> Load Video of Battle
+            </button>
+          </div>
         </div>
         <div className={"row" + (this.state.showVideoOnMobile ? "" : " d-none d-xs-block")}>
           <div className="col-12">
