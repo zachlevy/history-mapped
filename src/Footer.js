@@ -99,12 +99,12 @@ class Footer extends Component {
           </ModalFooter>
         </Modal>
 
-        <p>
+        <p className="d-none d-sm-block">
           <a href="https://github.com/zachlevy/history-videos" target="_blank">Built</a> by <a href="https://www.zachlevy.me" target="_blank">Zach Levy</a> &amp; <a href="https://github.com/zachlevy/history-videos/graphs/contributors" target="_blank">others</a>
           &nbsp;&copy; {currentYear}.
           Last updated {timestampToDateString(process.env.REACT_APP_TIMESTAMP)}. <Button disabled={this.state.feedback} size="sm" color="danger" onClick={this.toggle.bind(this)}>Suggestions?</Button>
         </p>
-        <div className="row text-center">
+        <div className="row text-center d-none d-sm-block">
           <div className="col-12">
             <ul className="list-inline social-links">
               <li className="list-inline-item"><h4><a href="https://github.com/zachlevy" target="_blank" ><i className="fa fa-github"></i></a></h4></li>
