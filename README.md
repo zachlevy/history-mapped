@@ -12,7 +12,7 @@ Improvements are welcome, just create a pull request. Below are some requested f
 - [x] Simultaneous Horizontal and vertical scroll to accommodate trackpads.
 - [x] Remember watched videos
 - [x] Notifications for new videos
-- [ ] Mobile design
+- [x] Mobile design
 
 #### Getting Started
 * Clone the repository
