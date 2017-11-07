@@ -75,7 +75,5 @@ export const scrollToSelectedMoment = (momentIndex) => {
   const toScrollToWidth = toScrollToElement.getBoundingClientRect().width
   const timelineWidth = timelineElement.getBoundingClientRect().width
   const scrollToPosition = (toScrollToLeft - firstMomentLeft) - (timelineWidth / 2) + (toScrollToWidth / 2)
-  setTimeout(() => {
-    document.getElementById("timeline").scrollTo(scrollToPosition, 0)
-  }, 3000)
+  document.getElementById("timeline").scrollTo(scrollToPosition, 0)
 }
