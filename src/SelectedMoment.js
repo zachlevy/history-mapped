@@ -4,12 +4,23 @@ import { dateToCommonEra } from './helpers'
 import YouTube from 'react-youtube'
 
 class SelectedMoment extends Component {
+  constructor() {
+    super()
+    this.state = {
+      showVideoOnMobile: false
+    }
+  }
   // when youtube video is played
   handleOnPlay(e) {
     const watchedVideoId = this.props.moment.youtubeId
     this.props.handleWatchedVideo(watchedVideoId)
   }
+  handleShowVideoOnMobile(e) {
+    console.log("handleShowVideoOnMobile")
+    this.setState({showVideoOnMobile: true})
+  }
   render() {
+    console.log("showVideoOnMobile", this.state.showVideoOnMobile)
     const moment = this.props.moment
     const playerOptions = {
       videoId: moment.youtubeId,
@@ -23,11 +34,16 @@ class SelectedMoment extends Component {
             <h3 className="title">{moment.title}</h3>
             <p className="author">by <em>{moment.author}</em></p>
           </div>
-          <div className="col-12 col-sm-4">
+          <div className="col-12 col-sm-4 d-none d-sm-block">
             <h3 className="date">{dateToCommonEra(new Date(moment.date))}</h3>
           </div>
         </div>
-        <div className="row">
+        <div className={"row" + (this.state.showVideoOnMobile ? " d-none" : " d-sm-none")}>
+          <button className="btn btn-primary" onClick={this.handleShowVideoOnMobile.bind(this)}>
+            Watch Battle
+          </button>
+        </div>
+        <div className={"row" + (this.state.showVideoOnMobile ? "" : " d-none d-xs-block")}>
           <div className="col-12">
             <div className="embed-responsive embed-responsive-16by9">
               {!this.props.mapMoving ? (
