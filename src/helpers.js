@@ -81,7 +81,7 @@ export const scrollToSelectedMoment = (momentIndex) => {
 // automatically scrolls to the position in steps, works with the recursiveScrollTo function
 // could definitely be refactored to be better
 const autoScrollTo = (destination, duration) => {
-  const tickDuration = 5 // in ms
+  const tickDuration = 20 // in ms
   const remainingTicks = duration / tickDuration
   const currentPosition = document.getElementById(`timeline-moment-0`).getBoundingClientRect().left
   const remainingDistance = Math.abs(currentPosition) - destination
