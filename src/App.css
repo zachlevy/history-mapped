@@ -81,6 +81,17 @@ footer {
   border-right: 125px solid transparent;
   border-bottom: 5px solid #eeeeee;
 }
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .arrow-up {
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+  }
+  .moment p {
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+  }
+}
 .timeline .moment:nth-child(even) .arrow-up {
   border-bottom-color: #dddddd;
 }
