@@ -16,7 +16,6 @@ class Footer extends Component {
   }
 
   toggle() {
-    console.log("toggle")
     this.setState({
       modal: !this.state.modal
     })
@@ -24,7 +23,6 @@ class Footer extends Component {
 
   handleSubmit(e) {
     e.preventDefault()
-    console.log("handleSubmit")
 
     fetch(`${process.env.REACT_APP_API_URL}/feedbacks`, {
       method: 'POST',

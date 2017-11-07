@@ -21,11 +21,9 @@ class SelectedMoment extends Component {
     this.props.handleWatchedVideo(watchedVideoId)
   }
   handleShowVideoOnMobile(e) {
-    console.log("handleShowVideoOnMobile")
     this.setState({showVideoOnMobile: true})
   }
   render() {
-    console.log("showVideoOnMobile", this.state.showVideoOnMobile)
     const moment = this.props.moment
     const playerOptions = {
       videoId: moment.youtubeId,
