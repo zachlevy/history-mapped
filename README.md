@@ -4,7 +4,6 @@ A website to help with visualizing the context around ancient famous historical 
 ### Stack
 * reactjs
 * create-react-app
-* iscroll for the timeline
 * mapbox-gl for the map
 
 ### Contributing
