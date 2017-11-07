@@ -5,8 +5,6 @@ import { dateToCommonEra, isWithinDaysAgo } from './helpers'
 class Moment extends Component {
   render() {
     const moment = this.props.moment
-    // put a default of 250px for moment with
-    const momentWidth = this.props.width || "250px"
     let watchBattleButtonText
     if (this.props.watched) {
       watchBattleButtonText = "Rewatch Battle"
@@ -14,7 +12,7 @@ class Moment extends Component {
       watchBattleButtonText = "Watch Battle"
     }
     const watchBattleButton = (
-      <div className="row">
+      <div className="row watch-battle-button">
         <div className="col-12 text-center">
           <button className="btn btn-primary btn-sm" onClick={this.props.handleClick.bind(null, moment)}>
             <i className="fa fa-eye"></i> {watchBattleButtonText}
@@ -28,7 +26,7 @@ class Moment extends Component {
     }
 
     return (
-      <div className={"moment" + (this.props.selectedMoment ? " selected-moment" : "")}>
+      <div id={"timeline-moment-" + this.props.momentIndex} className={"moment" + (this.props.selectedMoment ? " selected-moment" : "")}>
         <div className="timeline-previous-icon">
           <i className={"fa fa-circle" + (this.props.selectedMoment ? "" : "-thin")}></i>
         </div>
@@ -40,13 +38,13 @@ class Moment extends Component {
         <div className="row">
           <div className="col-12">
             <p className="text-center">
-              <span id={"timeline-moment-" + this.props.momentIndex}>{dateToCommonEra(new Date(moment.date))}</span>
+              <span>{dateToCommonEra(new Date(moment.date))}</span>
               {newMomentTag}
             </p>
             <p className="text-center">{moment.title}</p>
           </div>
         </div>
-        {this.props.selectedMoment ? "" : watchBattleButton}
+        {watchBattleButton}
       </div>
     )
   }
