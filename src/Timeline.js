@@ -11,7 +11,7 @@ class Timeline extends Component {
   // move the timeline when timeline updates
   componentWillReceiveProps(newProps) {
     if (newProps.selectedMomentIndex !== this.props.selectedMomentIndex) {
-      scrollToSelectedMoment(this.props.selectedMomentIndex)
+      scrollToSelectedMoment(newProps.selectedMomentIndex)
     }
   }
   render() {
