@@ -53,6 +53,10 @@ footer {
   overflow: auto;
   white-space: nowrap;
 }
+.timeline-line {
+  width: 100%;
+  position: fixed;
+}
 .moment {
   display: inline-block;
   text-decoration: none;
