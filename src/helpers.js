@@ -60,3 +60,18 @@ export const isWithinDaysAgo = (date, daysAgo) => {
   dateAgo.setDate(dateAgo.getDate() - daysAgo)
   return date > dateAgo
 }
+
+// scroll to moment element
+// math time
+// get the offset of the first moment, which will be offscreen to the left, use this as 0
+// get the offset of the moment to be scrolled to
+// add in the offset for the middle
+export const scrollToSelectedMoment = (momentIndex) => {
+  const firstMomentElement = document.getElementById(`timeline-moment-0`)
+  const toScrollToElement = document.getElementById(`timeline-moment-${momentIndex}`)
+  const firstMomentLeft = firstMomentElement.getBoundingClientRect().left
+  const toScrollToLeft = toScrollToElement.getBoundingClientRect().left
+  console.log("toScrollToLeft", toScrollToLeft, "firstMomentLeft", firstMomentLeft)
+
+  document.getElementById("timeline").scrollTo(toScrollToLeft - firstMomentLeft, 0)
+}

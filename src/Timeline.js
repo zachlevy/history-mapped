@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
 import Moment from './Moment'
 import SelectedMoment from './SelectedMoment'
-import { dateToCommonEra } from './helpers'
+import { dateToCommonEra, scrollToSelectedMoment } from './helpers'
 
 class Timeline extends Component {
-  // scroll to moment element
-  scrollToSelectedMoment(momentIndex) {
-    document.getElementById(`timeline-moment-${momentIndex}`).scrollIntoView()
-  }
-  // move the timeline when timeline updates
-  componentDidUpdate() {
-    this.scrollToSelectedMoment(this.props.selectedMomentIndex)
-  }
   componentDidMount() {
     // initial timeline move
-    this.scrollToSelectedMoment(this.props.selectedMomentIndex)
+    scrollToSelectedMoment(this.props.selectedMomentIndex)
+  }
+  // move the timeline when timeline updates
+  componentWillReceiveProps(newProps) {
+    if (newProps.selectedMomentIndex !== this.props.selectedMomentIndex) {
+      setTimeout(() => {
+        scrollToSelectedMoment(this.props.selectedMomentIndex)
+      }, 3000)
+    }
   }
   render() {
     const moments = this.props.moments
