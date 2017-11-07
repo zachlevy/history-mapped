@@ -69,9 +69,14 @@ export const isWithinDaysAgo = (date, daysAgo) => {
 export const scrollToSelectedMoment = (momentIndex) => {
   const firstMomentElement = document.getElementById(`timeline-moment-0`)
   const toScrollToElement = document.getElementById(`timeline-moment-${momentIndex}`)
+  const timelineElement = document.getElementById(`timeline`)
   const firstMomentLeft = firstMomentElement.getBoundingClientRect().left
   const toScrollToLeft = toScrollToElement.getBoundingClientRect().left
-  console.log("toScrollToLeft", toScrollToLeft, "firstMomentLeft", firstMomentLeft)
-
-  document.getElementById("timeline").scrollTo(toScrollToLeft - firstMomentLeft, 0)
+  const toScrollToWidth = toScrollToElement.getBoundingClientRect().width
+  const timelineWidth = timelineElement.getBoundingClientRect().width
+  const scrollToPosition = ((toScrollToLeft - firstMomentLeft) - (timelineWidth / 2)) + (toScrollToWidth / 2)
+  console.log({"toScrollToLeft": toScrollToLeft, "firstMomentLeft": firstMomentLeft, "timelineWidth": timelineWidth, "scrollToPosition": scrollToPosition, "toScrollToWidth": toScrollToWidth})
+  setTimeout(() => {
+    document.getElementById("timeline").scrollTo(scrollToPosition, 0)
+  }, 3000)
 }

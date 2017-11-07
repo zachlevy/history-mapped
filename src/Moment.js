@@ -26,7 +26,7 @@ class Moment extends Component {
     }
 
     return (
-      <div className={"moment" + (this.props.selectedMoment ? " selected-moment" : "")}>
+      <div id={"timeline-moment-" + this.props.momentIndex} className={"moment" + (this.props.selectedMoment ? " selected-moment" : "")}>
         <div className="timeline-previous-icon">
           <i className={"fa fa-circle" + (this.props.selectedMoment ? "" : "-thin")}></i>
         </div>
@@ -38,7 +38,7 @@ class Moment extends Component {
         <div className="row">
           <div className="col-12">
             <p className="text-center">
-              <span id={"timeline-moment-" + this.props.momentIndex}>{dateToCommonEra(new Date(moment.date))}</span>
+              <span>{dateToCommonEra(new Date(moment.date))}</span>
               {newMomentTag}
             </p>
             <p className="text-center">{moment.title}</p>
