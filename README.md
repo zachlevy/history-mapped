@@ -10,9 +10,9 @@ A website to help with visualizing the context around ancient famous historical 
 ### Contributing
 Improvements are welcome, just create a pull request. Below are some requested features and bugs.
 
-- [ ] Simultaneous Horizontal and vertical scroll to accommodate trackpads.
-- [ ] Remember watched videos
-- [ ] Notifications for new videos
+- [x] Simultaneous Horizontal and vertical scroll to accommodate trackpads.
+- [x] Remember watched videos
+- [x] Notifications for new videos
 - [ ] Mobile design
 
 #### Getting Started
