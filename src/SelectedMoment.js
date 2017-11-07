@@ -10,6 +10,11 @@ class SelectedMoment extends Component {
       showVideoOnMobile: false
     }
   }
+  componentWillReceiveProps(newProps) {
+    if (newProps.moment.youtubeId !== this.props.moment.youtubeId) {
+      this.setState({showVideoOnMobile: false})
+    }
+  }
   // when youtube video is played
   handleOnPlay(e) {
     const watchedVideoId = this.props.moment.youtubeId
