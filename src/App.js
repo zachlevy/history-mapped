@@ -90,7 +90,7 @@ class App extends Component {
       <div className="App">
         <div className="container-fluid">
           <div className="row no-gutters">
-            <div className="col-12 col-sm-6 order-sm-2">
+            <div className="col-12 col-sm-6 order-sm-2 panel-wrapper">
               <Panel
                 moments={selectedMoments}
                 mapMoving={this.state.mapMoving}

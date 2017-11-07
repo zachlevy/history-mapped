@@ -91,6 +91,13 @@ footer {
     padding-left: 0.2em;
     padding-right: 0.2em;
   }
+  .panel-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
 }
 .timeline .moment:nth-child(even) .arrow-up {
   border-bottom-color: #dddddd;
