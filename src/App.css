@@ -57,7 +57,7 @@ footer {
   display: inline-block;
   text-decoration: none;
 }
-.moment .selected-moment .watch-battle-button {
+.moment.selected-moment .watch-battle-button {
   visibility: hidden;
 }
 .timeline .moment:nth-child(even) {
