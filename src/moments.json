@@ -452,5 +452,16 @@
       "lng": 20.900606
     },
     "dateAdded": "2017-10-31"
+  }, {
+    "date": "0722-07-01T12:00:00.000Z",
+    "youtubeId": "f-0fhO0Jeu4",
+    "title": "Battle of Covadonga",
+    "author": "BazBattles",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Covadonga",
+    "location": {
+      "lat": 43.308889,
+      "lng": -5.055556
+    },
+    "dateAdded": "2017-11-09"
   }
 ]
