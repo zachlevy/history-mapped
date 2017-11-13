@@ -100,7 +100,7 @@ class Footer extends Component {
         <p className="d-none d-sm-block">
           <a href="https://github.com/zachlevy/history-videos" target="_blank">Built</a> by <a href="https://www.zachlevy.me" target="_blank">Zach Levy</a> &amp; <a href="https://github.com/zachlevy/history-videos/graphs/contributors" target="_blank">others</a>
           &nbsp;&copy; {currentYear}.
-          Last updated {timestampToDateString(process.env.REACT_APP_TIMESTAMP)}. <Button disabled={this.state.feedback} size="sm" color="danger" onClick={this.toggle.bind(this)}>Suggestions?</Button>
+          Last updated {timestampToDateString(process.env.REACT_APP_TIMESTAMP)}
         </p>
         <div className="row text-center d-none d-sm-block">
           <div className="col-12">
@@ -110,6 +110,28 @@ class Footer extends Component {
               <li className="list-inline-item"><h4><a href="https://twitter.com/zachary_levy" target="_blank" ><i className="fa fa-twitter"></i></a></h4></li>
               <li className="list-inline-item"><h4><a href="https://www.linkedin.com/in/zacharylevy/" target="_blank" ><i className="fa fa-linkedin"></i></a></h4></li>
               <li className="list-inline-item"><h4><a href="https://www.youtube.com/channel/UC8TCWJJKgsFJFHM-pVlTSEg" target="_blank" ><i className="fa fa-youtube"></i></a></h4></li>
+              <li className="list-inline-item paypal-button-wrapper">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" className="paypal-button">
+
+                  <input type="hidden" name="business"
+                      value="zach@firstexitmedia.com" />
+
+                  <input type="hidden" name="cmd" value="_donations" />
+
+                  <input type="hidden" name="item_name" value="Help keep History Mapped functioning and up to date" />
+                  <input type="hidden" name="item_number" value="Thanks!" />
+                  <input type="hidden" name="currency_code" value="USD" />
+
+                  <input type="image" name="submit"
+                  src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_donate_92x26.png"
+                  alt="Donate" />
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                </form>
+              </li>
+              <li className="list-inline-item paypal-button-wrapper">
+                <Button disabled={this.state.feedback} size="sm" color="danger" onClick={this.toggle.bind(this)}>Feedback?</Button>
+              </li>
             </ul>
           </div>
         </div>

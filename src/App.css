@@ -137,3 +137,12 @@ footer {
     padding: 0em 0.2em;
   }
 }
+.paypal-button-wrapper {
+  position: relative;
+  width: 100px;
+}
+.paypal-button {
+  top: -17px;
+  width: 100px;
+  position: absolute;
+}
