@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import Test from './Test'
+import Home from './Home'
+import { Switch, Route } from 'react-router-dom'
 
 import { currentYear, timestampToDateString, buildFormErrors } from './helpers'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'
@@ -96,7 +99,12 @@ class Footer extends Component {
             <Button color="secondary" onClick={this.toggle}>Close</Button>
           </ModalFooter>
         </Modal>
-
+        <div>
+          <Switch>
+            <Route exact path='/' component={Home}/>
+            <Route path='/test/' component={Test}/>
+          </Switch>
+        </div>
         <p className="d-none d-sm-block">
           <a href="https://github.com/zachlevy/history-videos" target="_blank">Built</a> by <a href="https://www.zachlevy.me" target="_blank">Zach Levy</a> &amp; <a href="https://github.com/zachlevy/history-videos/graphs/contributors" target="_blank">others</a>
           &nbsp;&copy; {currentYear}.
