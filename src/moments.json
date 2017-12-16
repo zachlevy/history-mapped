@@ -486,7 +486,6 @@
     },
     "dateAdded": "2017-12-16"
   }, {
-
     "date": "-000052-02-01T12:00:00.000Z",
     "youtubeId": "lMFiED6sAi8",
     "title": "Siege of Avaricum",
@@ -495,6 +494,17 @@
     "location": {
       "lat": 47.0844,
       "lng": 2.3964
+    },
+    "dateAdded": "2017-12-16"
+  }, {
+    "date": "-000052-04-01T12:00:00.000Z",
+    "youtubeId": "lMFiED6sAi8?t=15m15s",
+    "title": "Battle of Gergovia",
+    "author": "Historia Civilis",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Gergovia",
+    "location": {
+      "lat": 45.708333,
+      "lng": 3.125
     },
     "dateAdded": "2017-12-16"
   }
