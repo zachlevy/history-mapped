@@ -507,5 +507,16 @@
       "lng": 3.125
     },
     "dateAdded": "2017-12-16"
+  }, {
+    "date": "1242-04-05T12:00:00.000Z",
+    "youtubeId": "cvh1H0HkhI8",
+    "title": "Battle on the Ice",
+    "author": "BazBattles",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_on_the_Ice",
+    "location": {
+      "lat": 58.270919,
+      "lng": 27.532601
+    },
+    "dateAdded": "2017-12-16"
   }
 ]
