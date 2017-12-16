@@ -485,5 +485,17 @@
       "lng": 4.5
     },
     "dateAdded": "2017-12-16"
+  }, {
+
+    "date": "-000052-02-01T12:00:00.000Z",
+    "youtubeId": "lMFiED6sAi8",
+    "title": "Siege of Avaricum",
+    "author": "Historia Civilis",
+    "wikipedia": "https://en.wikipedia.org/wiki/Avaricum",
+    "location": {
+      "lat": 47.0844,
+      "lng": 2.3964
+    },
+    "dateAdded": "2017-12-16"
   }
 ]
