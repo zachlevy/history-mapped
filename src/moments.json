@@ -474,5 +474,16 @@
       "lng": 135.690738
     },
     "dateAdded": "2017-11-28"
+  }, {
+    "date": "-000052-09-01T12:00:00.000Z",
+    "youtubeId": "SU1Ej9Yqt68",
+    "title": "Battle of Alesia",
+    "author": "Historia Civilis",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Alesia",
+    "location": {
+      "lat": 47.537,
+      "lng": 4.5
+    },
+    "dateAdded": "2017-12-16"
   }
 ]
