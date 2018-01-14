@@ -518,5 +518,16 @@
       "lng": 27.532601
     },
     "dateAdded": "2017-12-16"
+  }, {
+    "date": "0722-08-10T12:00:00.000Z",
+    "youtubeId": "VN47_4uabOw",
+    "title": "Battle of Lechfeld",
+    "author": "BazBattles",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Lechfeld_(955)",
+    "location": {
+      "lat": 48.185555,
+      "lng": 10.861111
+    },
+    "dateAdded": "2018-01-13"
   }
 ]
