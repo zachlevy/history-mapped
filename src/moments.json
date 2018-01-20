@@ -529,5 +529,16 @@
       "lng": 10.861111
     },
     "dateAdded": "2018-01-13"
+  }, {
+    "date": "1030-07-29T12:00:00.000Z",
+    "youtubeId": "2XV2Vn7YJrM",
+    "title": "Battle of Stiklestad",
+    "author": "BazBattles",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Stiklestad",
+    "location": {
+      "lat": 63.796667,
+      "lng": 11.566667
+    },
+    "dateAdded": "2018-01-20"
   }
 ]
