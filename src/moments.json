@@ -540,5 +540,16 @@
       "lng": 11.566667
     },
     "dateAdded": "2018-01-20"
+  }, {
+    "date": "0451-05-26T12:00:00.000Z",
+    "youtubeId": "8d4FHivSplU",
+    "title": "Battle of Avarayr",
+    "author": "BazBattles",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Avarayr",
+    "location": {
+      "lat": 39.338792,
+      "lng": 45.057092
+    },
+    "dateAdded": "2018-02-06"
   }
 ]
