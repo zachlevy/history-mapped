@@ -551,5 +551,16 @@
       "lng": 45.057092
     },
     "dateAdded": "2018-02-06"
+  }, {
+    "date": "1062-08-09T12:00:00.000Z",
+    "youtubeId": "jBrA55ZPw3E",
+    "title": "Battle of Nisa",
+    "author": "BazBattles",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Nis%C3%A5",
+    "location": {
+      "lat": 56.657517,
+      "lng": 12.849075
+    },
+    "dateAdded": "2018-02-27"
   }
 ]
