@@ -14,6 +14,7 @@ Improvements are welcome, just create a pull request. Below are some requested f
 - [x] Notifications for new videos
 - [x] Mobile design
 - [ ] Add Kings and Generals YouTube channel battles
+- [ ] Add HistoryMarche YouTube channel battles
 
 #### Getting Started
 * Clone the repository
