@@ -10,6 +10,7 @@ A website to help with visualizing the context around ancient famous historical 
 `$ npm run deploy` to an `s3` bucket. Details in the `package.json`.
 
 ### Adding Videos
+Add a video to `src/moments.json`
 
 ```
 {
