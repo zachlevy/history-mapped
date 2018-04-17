@@ -32,7 +32,7 @@ class Footer extends Component {
       },
       body: JSON.stringify({
         feedback: {
-          source: "history-videos feedback",
+          source: "history-mapped feedback",
           body: {
             message: this.state.message || null,
             name: this.state.name || null,
@@ -98,7 +98,7 @@ class Footer extends Component {
         </Modal>
 
         <p className="d-none d-sm-block">
-          <a href="https://github.com/zachlevy/history-videos" target="_blank">Built</a> by <a href="https://www.zachlevy.me" target="_blank">Zach Levy</a> &amp; <a href="https://github.com/zachlevy/history-videos/graphs/contributors" target="_blank">others</a>
+          <a href="https://github.com/zachlevy/history-mapped" target="_blank">Built</a> by <a href="https://www.zachlevy.me" target="_blank">Zach Levy</a> &amp; <a href="https://github.com/zachlevy/history-mapped/graphs/contributors" target="_blank">others</a>
           &nbsp;&copy; {currentYear}.
           Last updated {timestampToDateString(process.env.REACT_APP_TIMESTAMP)}
         </p>

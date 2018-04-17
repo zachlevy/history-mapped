@@ -1,6 +1,6 @@
 {
-  "name": "history-videos",
-  "version": "0.1.0",
+  "name": "history-mapped",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "iscroll": "^5.2.0",

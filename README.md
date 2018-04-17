@@ -22,3 +22,18 @@ Improvements are welcome, just create a pull request. Below are some requested f
 
 ### Deployment
 `$ npm run deploy` to an `s3` bucket. Details in the `package.json`.
+
+```
+{
+  "date": "0000-01-01T12:00:00.000Z",
+  "youtubeId": "",
+  "title": "",
+  "author": "",
+  "wikipedia": "",
+  "location": {
+    "lat": 0,
+    "lng": 0
+  },
+  "dateAdded": "2000-01-01"
+}
+```
