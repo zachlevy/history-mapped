@@ -1,0 +1,47 @@
+[
+  {
+    "date": "1356-09-19T12:00:00.000Z",
+    "youtubeId": "nPOkVvhrDkg",
+    "title": "Battle of Poitiers",
+    "author": "HistoryMarche",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Poitiers",
+    "location": {
+      "lat": 46.53,
+      "lng": 0.4
+    },
+    "dateAdded": "2018-04-17"
+  }, {
+    "date": "1475-01-10T12:00:00.000Z",
+    "youtubeId": "CKFhubbLQd0",
+    "title": "Battle of Vaslui",
+    "author": "HistoryMarche",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Vaslui",
+    "location": {
+      "lat": 46.616667,
+      "lng": 27.716667
+    },
+    "dateAdded": "2018-04-17"
+  }, {
+    "date": "1241-04-11T12:00:00.000Z",
+    "youtubeId": "C8OMbxNuLzA",
+    "title": "Battle Of Mohi",
+    "author": "HistoryMarche",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Mohi",
+    "location": {
+      "lat": 47.977747,
+      "lng": 20.913292
+    },
+    "dateAdded": "2018-04-17"
+  }, {
+    "date": "-000220-06-01T12:00:00.000Z",
+    "youtubeId": "sF1zOflXZKY",
+    "title": "Battle of Rhone Crossing",
+    "author": "HistoryMarche",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Rhone_Crossing",
+    "location": {
+      "lat": 44.074977,
+      "lng": 4.767451
+    },
+    "dateAdded": "2018-04-17"
+  }
+]

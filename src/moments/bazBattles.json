@@ -1,189 +1,9 @@
 [
   {
-    "date": "-000326-05-01T12:00:00.000Z",
-    "youtubeId": "jrmgas_MDzc",
-    "title": "Battle of the Hydaspes",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_the_Hydaspes",
-    "location": {
-      "lat": 32.895816,
-      "lng": 73.713519
-    }
-  },{
-    "date": "-000218-12-25T12:00:00.000Z",
-    "youtubeId": "O-bXtg14T90",
-    "title": "Battle of the Trebia River",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_the_Trebia",
-    "location": {
-      "lat": 45.0515,
-      "lng": 9.6354
-    }
-  },{
-    "date": "-000217-06-24T12:00:00.000Z",
-    "youtubeId": "nfdM76p7Dpk",
-    "title": "Battle of Lake Trasimene",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Lake_Trasimene",
-    "location": {
-      "lat": 43.197754,
-      "lng": 12.089783
-    }
-  },{
-    "date": "-000216-08-02T12:00:00.000Z",
-    "youtubeId": "MroGPObEZzk",
-    "title": "Battle of Cannae",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Cannae",
-    "location": {
-      "lat": 41.306389,
-      "lng": 16.1325
-    }
-  },{
-    "date": "-000202-10-19T12:00:00.000Z",
-    "youtubeId": "SjxYJBWcS08",
-    "title": "Battle of Zama",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Zama",
-    "location": {
-      "lat": 36.111955,
-      "lng": 9.2832725
-    }
-  },{
-    "date": "-000058-01-01T12:00:00.000Z",
-    "youtubeId": "ou5ecpHdWYI",
-    "title": "Caesar vs Ariovistus",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Vosges_(58_BC)",
-    "location": {
-      "lat": 48.2486131,
-      "lng": 6.9768901
-    }
-  },{
-    "date": "-000058-06-20T12:00:00.000Z",
-    "youtubeId": "3b3HMoE_3qI",
-    "title": "Caesar vs the Helvetii",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Bibracte",
-    "location": {
-      "lat": 46.666667,
-      "lng": 4.7
-    }
-  },{
-    "date": "-000057-01-01T12:00:00.000Z",
-    "youtubeId": "wlrNX3zxAk0",
-    "title": "Battle of the Sabis",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_the_Sabis",
-    "location": {
-      "lat": 50.2414,
-      "lng": 3.4447
-    }
-  },{
-    "date": "-000057-01-01T12:00:00.000Z",
-    "youtubeId": "xi6xEAAdcbY",
-    "title": "Battle of the Axona",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_the_Axona",
-    "location": {
-      "lat": 49.5,
-      "lng": 3.5
-    }
-  },{
-    "date": "-000056-01-01T12:00:00.000Z",
-    "youtubeId": "MPsugO6txb4",
-    "title": "Caesar in Gaul - Makin' Waves",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Gallic_Wars",
-    "location": {
-      "lat": 47.5154704,
-      "lng": -3.1309856
-    }
-  },{
-    "date": "-000055-01-01T12:00:00.000Z",
-    "youtubeId": "LOCBWh5Iwm4",
-    "title": "Caesar in Britain",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Caesar%27s_invasions_of_Britain",
-    "location": {
-      "lat": 51.210527,
-      "lng": 1.404779
-    }
-  },{
-    "date": "-000054-01-01T12:00:00.000Z",
-    "youtubeId": "GrW6epBAz9Q",
-    "title": "Caesar in Britain II - There and Back Again",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Caesar%27s_invasions_of_Britain",
-    "location": {
-      "lat": 51.1295,
-      "lng": 1.3089
-    }
-  },{
-    "date": "-000053-01-01T12:00:00.000Z",
-    "youtubeId": "QqUnpCUi9KQ",
-    "title": "Caesar in Gaul: REVOLT!",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Ambiorix%27s_revolt",
-    "location": {
-      "lat": 49.980133,
-      "lng": 6.331935
-    }
-  },{
-    "date": "-000053-05-06T12:00:00.000Z",
-    "youtubeId": "bR7VDPUj5AE",
-    "title": "Battle of Carrhae",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Carrhae",
-    "location": {
-      "lat": 36.8775,
-      "lng": 39.033889
-    }
-  },{
-    "date": "-000048-08-09T12:00:00.000Z",
-    "youtubeId": "QfLOaunQqxA",
-    "title": "Battle of Pharsalus",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Pharsalus",
-    "location": {
-      "lat": 39.3,
-      "lng": 22.383333
-    }
-  },{
-    "date": "0009-09-09T12:00:00.000Z",
-    "youtubeId": "kmF3VBA_RcM",
-    "title": "Battle of the Teutoburg Forest",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_the_Teutoburg_Forest",
-    "location": {
-      "lat": 52.283333,
-      "lng": 8.05
-    }
-  }, {
-    "date": "0060-01-01T12:00:00.000Z",
-    "youtubeId": "npwM2touF08",
-    "title": "Boudicca",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Watling_Street",
-    "location": {
-      "lat": 52.65625,
-      "lng": -1.927139
-    }
-  }, {
     "date": "1099-06-07T12:00:00.000Z",
     "youtubeId": "2loWiJSUDIQ",
     "title": "Siege of Jerusalem",
     "author": "BazBattles",
-    "wikipedia": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(1099)",
-    "location": {
-      "lat": 31.783333,
-      "lng": 35.216667
-    }
-  },{
-    "date": "1099-06-07T12:00:00.000Z",
-    "youtubeId": "heVeJmTOsmQ",
-    "title": "Siege of Jerusalem",
-    "author": "Historia Civilis",
     "wikipedia": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(1099)",
     "location": {
       "lat": 31.783333,
@@ -198,16 +18,6 @@
     "location": {
       "lat": 31.670439,
       "lng": 34.558053
-    }
-  },{
-    "date": "1415-10-25T12:00:00.000Z",
-    "youtubeId": "VDnKciXrmnc",
-    "title": "Battle of Agincourt",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Agincourt",
-    "location": {
-      "lat": 50.463611,
-      "lng": 2.141667
     }
   },{
     "date": "-000358-01-01T12:00:00.000Z",
@@ -442,17 +252,6 @@
     },
     "dateAdded": "2017-10-22"
   }, {
-    "date": "-000335-12-01T12:00:00.000Z",
-    "youtubeId": "dKQw6rxk41A",
-    "title": "Balkan Campaign",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Siege_of_Pelium",
-    "location": {
-      "lat": 40.894204,
-      "lng": 20.900606
-    },
-    "dateAdded": "2017-10-31"
-  }, {
     "date": "0722-07-01T12:00:00.000Z",
     "youtubeId": "f-0fhO0Jeu4",
     "title": "Battle of Covadonga",
@@ -474,39 +273,6 @@
       "lng": 135.690738
     },
     "dateAdded": "2017-11-28"
-  }, {
-    "date": "-000052-09-01T12:00:00.000Z",
-    "youtubeId": "SU1Ej9Yqt68",
-    "title": "Battle of Alesia",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Alesia",
-    "location": {
-      "lat": 47.537,
-      "lng": 4.5
-    },
-    "dateAdded": "2017-12-16"
-  }, {
-    "date": "-000052-02-01T12:00:00.000Z",
-    "youtubeId": "lMFiED6sAi8",
-    "title": "Siege of Avaricum",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Avaricum",
-    "location": {
-      "lat": 47.0844,
-      "lng": 2.3964
-    },
-    "dateAdded": "2017-12-16"
-  }, {
-    "date": "-000052-04-01T12:00:00.000Z",
-    "youtubeId": "lMFiED6sAi8?t=15m15s",
-    "title": "Battle of Gergovia",
-    "author": "Historia Civilis",
-    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Gergovia",
-    "location": {
-      "lat": 45.708333,
-      "lng": 3.125
-    },
-    "dateAdded": "2017-12-16"
   }, {
     "date": "1242-04-05T12:00:00.000Z",
     "youtubeId": "cvh1H0HkhI8",
