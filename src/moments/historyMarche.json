@@ -43,5 +43,27 @@
       "lng": 4.767451
     },
     "dateAdded": "2018-04-17"
+  }, {
+    "date": "1500-02-17T12:00:00.000Z",
+    "youtubeId": "jF72Gyf4eeA",
+    "title": "Battle Of Hemmingstedt",
+    "author": "HistoryMarche",
+    "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Hemmingstedt",
+    "location": {
+      "lat": 54.140059,
+      "lng": 9.067775
+    },
+    "dateAdded": "2018-08-13"
+  }, {
+    "date": "1462-06-17T12:00:00.000Z",
+    "youtubeId": "9RoBspQiOiE",
+    "title": "Battle of Targoviste",
+    "author": "HistoryMarche",
+    "wikipedia": "https://en.wikipedia.org/wiki/Night_Attack_at_T%C3%A2rgovi%C5%9Fte",
+    "location": {
+      "lat": 44.830875,
+      "lng": 25.563202
+    },
+    "dateAdded": "2018-08-13"
   }
 ]
