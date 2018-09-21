@@ -36,6 +36,7 @@ Improvements are welcome, just create a pull request. Below are some requested f
 - [x] Mobile design
 - [ ] Add Kings and Generals YouTube channel battles
 - [x] Add HistoryMarche YouTube channel battles
+- [ ] Night mooooooode
 
 ### Stack
 * reactjs
